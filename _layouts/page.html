@@ -1,0 +1,15 @@
+{% include header.html %}
+
+<article>
+    <h1>
+    {% if page.displayTitle %}
+        {{ page.displayTitle }}
+    {% else %}
+        {{ page.title | widont }}
+    {% endif %}
+    </h1>
+
+    {{ content }}
+</article>
+
+{% include footer.html %}

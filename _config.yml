@@ -1,0 +1,15 @@
+# ======================================================================
+# General site config
+# ======================================================================
+
+name: "visual assault, llc"
+description: Internet Creators
+url: http://visual-assault.org
+
+markdown: kramdown
+
+color: "#CA4A4C"
+
+highlighter: true
+
+permalink: pretty
