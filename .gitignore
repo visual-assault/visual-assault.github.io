@@ -18,7 +18,7 @@ Thumbs.db
 *~
 
 # Vendor dependencies
-bower_components/
+# bower_components/
 browser_modules/
 node_modules/
 
