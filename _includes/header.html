@@ -2,16 +2,42 @@
 <html lang=en>
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }} | {{ site.name }}</title>
+  <title>{{ page.title }}</title>
   <meta name="viewport" content="initial-scale=1">
-  <meta property="og:title" content="{{ page.title }}">
+  <link rel="stylesheet" href="/static/stylesheets/all.min.css">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="home" href="{{ site.url }}">
+  {% if page.metaDescription %}
+  <meta name="description" content="{{ page.metaDescription }}">
+  {% else %}
+  <meta name="description" content="{{ page.excerpt | strip_html }}">
+  {% endif %}
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:title" content="{{ page.title }}">
+  {% if page.metaOgType %}
+  <meta property="og:type" content="{{ page.metaOgType }}">
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.metaDescription %}
+  <meta property="og:description" content="{{ page.metaDescription }}">
+  {% else %}
   <meta property="og:description" content="{{ page.excerpt | strip_html }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% if page.metaDescription %}
+  <meta name="twitter:description" content="{{ page.metaDescription }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+  {% endif %}
+  <meta name="twitter:site" content="@visualassault">
 </head>
 <body>
 
 <header>
-    <a href="/" title="Home">{{ site.name }}</a>
-    {% include nav.html %}
+  <a href="/" title="Home">Home</a>
+  {% include nav.html %}
 </header>

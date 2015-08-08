@@ -4,10 +4,12 @@
     <h1>
     {% if page.displayTitle %}
         {{ page.displayTitle }}
-    {% else %}
-        {{ page.title | widont }}
     {% endif %}
     </h1>
+
+    {% if page.date %}
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%A %B %-d, %Y" }}</time>
+    {% endif %}
 
     {{ content }}
 </article>

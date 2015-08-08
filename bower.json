@@ -1,0 +1,17 @@
+{
+  "name": "visual-assault.github.io",
+  "version": "3.0.0",
+  "homepage": "https://github.com/visual-assault/visual-assault.github.io",
+  "authors": [
+    "0xADADA <0xadada.pub@0xadada.pub>"
+  ],
+  "description": "Website for visual assault, llc",
+  "keywords": [
+    "visual",
+    "assault"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pure": "~0.6.0"
+  }
+}
