@@ -2,6 +2,8 @@
 layout: page
 title: visual assault, llc
 displayTitle: About
+metaDescription: "visual assault - internet philosophers"
+metaOgType: "website"
 ---
 
 visual assault is an affinity group of responsible people who take pride
