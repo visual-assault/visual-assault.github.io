@@ -1,17 +1,25 @@
 {% include header.html %}
 
-<article>
-    <h1>
+<article class="o-Layout pure-g h-entry">
+  <header class="pure-u-sm-1-4">
+    <h1 class="p-name">
     {% if page.displayTitle %}
         {{ page.displayTitle }}
     {% endif %}
     </h1>
 
     {% if page.date %}
-    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%A %B %-d, %Y" }}</time>
+    <time class="dt-published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%A %B %-d, %Y" }}</time>
     {% endif %}
 
+    {% if page.author %}
+    <br>
+    by <span class="p-author">{{ page.author }}</span>
+    {% endif %}
+  </header>
+  <div class="pure-u-sm-3-4 e-content">
     {{ content }}
+  </div>
 </article>
 
 {% include footer.html %}

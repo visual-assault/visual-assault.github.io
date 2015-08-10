@@ -6,3 +6,19 @@
  *
  * o- is the prefix for all objects.
  */
+
+/* ===== o-Layout ======================================================
+ * Designates the main site horizontal widths
+ */
+.o-Layout {
+  max-width: 57em;
+  margin: 0 auto;
+}
+
+
+/* ===== o-Center ======================================================
+ * Center text content
+ */
+.o-Center {
+  text-align: center;
+}

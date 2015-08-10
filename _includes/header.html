@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="initial-scale=1">
-  <link rel="stylesheet" href="/static/stylesheets/all.min.css">
+  <link rel="stylesheet" href="/static/stylesheets/all.min.58070bc9.css">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="home" href="{{ site.url }}">
   {% if page.metaDescription %}
@@ -37,7 +37,11 @@
 </head>
 <body>
 
-<header>
-  <a href="/" title="Home">Home</a>
-  {% include nav.html %}
+<header class="o-Layout pure-g c-Header">
+  <div class="pure-u-sm-1-4">
+    <a class="c-GlobalNav--Link" href="/" title="Home">Home</a>
+  </div>
+  <div class="pure-u-sm-3-4">
+    {% include nav.html %}
+  </div>
 </header>

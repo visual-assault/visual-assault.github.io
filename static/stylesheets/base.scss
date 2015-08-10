@@ -33,9 +33,16 @@
 html,
 button,
 input,
-select {
+select,
+.pure-g [class*="pure-u"] {
   /* Normalize font stack. */
-  font-family: Georgia, serif;
+  font-size: 100%;
+  /*
+  -webkit-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings: "liga", "kern";
+  font-kerning: normal;
+   */
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* font-smooth: always; */
@@ -49,4 +56,36 @@ select {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 /* text-size-adjust: 100%; */
+
+  text-rendering: optimizelegibility;
+}
+
+body {
+  background: #FDF9F0;
+  color: #292929;
+  padding: 1.5em;
+}
+
+a {
+  color: #292929;
+  text-decoration: underline;
+}
+a:hover {
+  color: #0000cc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, serif;
+  font-size: 1em;
+}
+
+@media (max-width: 568px) {
+  .pure-g {
+    letter-spacing: 0;
+  }
 }

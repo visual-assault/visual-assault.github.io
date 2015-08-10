@@ -1,13 +1,13 @@
 /*!
  * visual-assault.org
  *
- * @author: @0xADADA
+ * author: Ron. A @0xADADA
  * MIT License
  */
 
  /* vendors */
-@import '../vendor/bower_components/pure/pure-min';
-@import '../vendor/bower_components/pure/grids-responsive-min';
+@import '../vendor/bower_components/pure/pure-min.css';
+@import '../vendor/bower_components/pure/grids-responsive-min.css';
 
 /* local */
 @import 'tools.scss';
@@ -15,3 +15,5 @@
 @import 'objects.scss';
 @import 'components.scss';
 @import 'trumps.scss';
+
+#h1 { color: red; }

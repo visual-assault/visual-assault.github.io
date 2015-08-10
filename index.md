@@ -1,6 +1,7 @@
 ---
 layout: page
 title: visual assault, llc
+displayTitle: About
 ---
 
 visual assault is an affinity group of responsible people who take pride

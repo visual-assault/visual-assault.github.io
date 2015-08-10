@@ -1,0 +1,16 @@
+{
+    /* Explicitly ignore */
+    "adjoining-classes"            : false,
+    "box-model"                    : false,
+    "box-sizing"                   : false,
+    "import"                       : false,
+    "universal-selector"           : false,
+
+    /* Warnings */
+    "regex-selectors"              : true,
+
+    /* Explicitly mark as errors */
+    "known-properties"             : 2,
+    "overqualified-elements"       : 2,
+    "zero-units"                   : 2
+}

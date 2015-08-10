@@ -4,3 +4,46 @@
  * expliciltly named (e.g. products-list).
  * This is where the sculptor adds the features.
  */
+
+/* ===== c-Header ======================================================
+ * The global site header
+ * c-Header
+ */
+.c-Header {
+  margin-bottom: 4.5em;
+}
+
+
+/* ===== c-GlobalNav ===================================================
+ * The global navigation links
+ */
+.c-GlobalNav--Link:link {
+  background-color: transparent;
+  color: #292929;
+  padding: 0;
+  text-decoration: none;
+}
+.c-GlobalNav--Link:hover,
+.c-GlobalNav--Item.is-active .c-GlobalNav--Link {
+  text-decoration: underline;
+}
+.c-GlobalNav--Link:hover {
+  background-color: transparent;
+}
+
+
+/* ===== c-Footer ======================================================
+ * Global site footer
+ */
+.c-Footer {
+  margin: 1.5em auto;
+  border-top: 1px solid rgba(61, 70, 77, 0.1);
+}
+
+
+/* ===== c-Meta ========================================================
+ * Non-content styling
+ */
+.c-Meta {
+  color: rgba(61, 70, 77, 0.6);
+}
