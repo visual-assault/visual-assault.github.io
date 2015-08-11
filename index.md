@@ -8,7 +8,7 @@ metaOgType: "website"
 
 Since 2004 visual assault has been designing and building a wide range
 of web sites, apps and tools for fortune 500 companies, innovative startups
-and contributing to open source projects. We advise, advise, design,
+and contributing to open source projects. We advise, consult, design,
 implement optimize and maintain.
 
 visual assault is an affinity group of responsible people who take pride
