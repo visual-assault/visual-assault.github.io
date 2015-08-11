@@ -17,9 +17,23 @@
     by <span class="p-author">{{ page.author }}</span>
     {% endif %}
   </header>
+
   <div class="pure-u-sm-3-4 e-content">
     {{ content }}
   </div>
+
+  {% if page.license %}
+  <footer class="c-Meta c-License pure-g">
+    {% if page.license == "cc-by-nc-sa" %}
+    {% include cc-by-nc-sa.html %}
+    {% elsif page.license == "cc-by-sa" %}
+    {% include cc-by-sa.html %}
+    {% elsif page.license == "cc-by" %}
+    {% include cc-by.html %}
+    {% endif %}
+  </footer>
+  {% endif %}
+
 </article>
 
 {% include footer.html %}

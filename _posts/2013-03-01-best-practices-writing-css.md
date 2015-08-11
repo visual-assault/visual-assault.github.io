@@ -6,6 +6,7 @@ date: 2013-03-01 20:01:00
 metaDescription: "Conventions to help writing performant, maintainable stylesheets"
 metaOgType: "article"
 author: Ron. A
+license: cc-by-sa
 ---
 
 ## General High-Order Principles

@@ -11,9 +11,9 @@ metaDescription: Articles written by visual assault
   <li>
     <a href="{{ post.url }}" title="{{ post.title }}">
       <span>{{ post.title }}</span>
-      <br>
-      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%A %B %-d, %Y" }}</time>
     </a>
+    <br>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%A %B %-d, %Y" }}</time>
   </li>
   {% endif %}
 {% endfor %}

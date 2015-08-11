@@ -2,9 +2,14 @@
 layout: page
 title: visual assault, llc
 displayTitle: About
-metaDescription: "visual assault - internet philosophers"
+metaDescription: "visual assault - internet creators"
 metaOgType: "website"
 ---
+
+Since 2004 visual assault has been designing and building a wide range
+of web sites, apps and tools for fortune 500 companies, innovative startups
+and contributing to open source projects. We advise, advise, design,
+implement optimize and maintain.
 
 visual assault is an affinity group of responsible people who take pride
 in our work and take our lives seriously. We are not a "work hard/play

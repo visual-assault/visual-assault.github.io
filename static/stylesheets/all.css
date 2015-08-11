@@ -130,6 +130,7 @@ input,
 select,
 .pure-g [class*="pure-u"] {
   /* Normalize font stack. */
+  /* font-family: Georgia, Times, "Times New Roman", serif; */
   font-size: 100%;
   /*
   -webkit-font-feature-settings: "liga", "kern";
@@ -238,13 +239,18 @@ h6 {
 .c-Meta {
   color: rgba(61, 70, 77, 0.6); }
 
+/* ===== c-License =====================================================
+ * Copyright and ownership styles
+ */
+.c-License {
+  margin-top: 4em;
+  margin-bottom: 4em; }
+
 /* ===== Trumps ========================================================
  * Trumps
  * Overrides, helpers, utilities. Only affect on piece of the DOM at
  * a time. Usually carry !imporant.
  * This is where the sculptor adds fine details.
  */
-#h1 {
-  color: red; }
 
 /*# sourceMappingURL=all.css.map */
