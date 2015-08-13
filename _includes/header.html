@@ -14,12 +14,15 @@
   {% endif %}
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="/static/images/meta/icon-512x512.png">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:width" content="512">
   {% if page.metaOgType %}
   <meta property="og:type" content="{{ page.metaOgType }}">
   {% else %}
   <meta property="og:type" content="website">
   {% endif %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   {% if page.metaDescription %}
   <meta property="og:description" content="{{ page.metaDescription }}">
   {% else %}
@@ -28,12 +31,28 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:image" content="/static/images/meta/icon-512x512.png">
+  <meta name="twitter:image:height" content="512">
+  <meta name="twitter:image:width" content="512">
   {% if page.metaDescription %}
   <meta name="twitter:description" content="{{ page.metaDescription }}">
   {% else %}
   <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
   {% endif %}
   <meta name="twitter:site" content="@visualassault">
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/images/meta/icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/meta/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/images/meta/icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/meta/icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/images/meta/icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/images/meta/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/images/meta/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/meta/icon-180x180.png">
+  <link rel="icon" sizes="16x16" type="image/png" href="/static/images/meta/icon-16x16.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="/static/images/meta/icon-32x32.png">
+  <link rel="icon" sizes="60x60" type="images/png" href="/static/images/meta/icon-60x60.png">
+  <link rel="icon" sizes="96x96" type="image/png" href="/static/images/meta/icon-96x96.png">
+  <link rel="icon" sizes="192x192" type="image/png" href="/static/images/meta/icon-192x192.png">
 </head>
 <body>
 
