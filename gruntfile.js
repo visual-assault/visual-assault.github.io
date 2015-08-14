@@ -9,8 +9,41 @@ module.exports = function(grunt) {
     grunt.initConfig( {
         pkg : grunt.file.readJSON( 'package.json' ),
 
+        watch: {
+            options: {
+                livereload: true
+            },
+            jekyll: {
+                files: [
+                    '**/*.{html,yml,md,mkd,markdown}',
+                    '_config.yml',
+                    '!static/vendor/**/*',
+                    '!node_modules/**/*',
+                    '!_site/node_modules/**/*'
+                ],
+                tasks: [
+                    'jekyll:dev'
+                ]
+            },
+            sass: {
+                files: [
+                    'static/stylesheets/**/*.scss'
+                ],
+                tasks: [
+                    'sass',
+                    'cssmin',
+                    'cacheBust',
+                    'jekyll:dev'
+                ]
+            }
+        },
+
         sass: {
             all: {
+                options: {
+                    style: 'compressed',
+                    precision: 8
+                },
                 files: {
                     'static/stylesheets/all.css': 'static/stylesheets/all.scss'
                 }
@@ -26,6 +59,35 @@ module.exports = function(grunt) {
             },
             all: {
                 src: [ 'static/stylesheets/**/*.css' ]
+            }
+        },
+
+        /* Build Jekyll site.
+         */
+        jekyll: {
+            options: {
+                bundleExec: false
+            },
+            master: {
+                options: {
+                    config: '_config.yml'
+                }
+            },
+            dev: {
+                options: {
+                    config: '_config.yml,_config_local.yml'
+                }
+            },
+            server: {
+                options: {
+                    config: '_config.yml,_config_local.yml',
+                    serve: true
+                }
+            },
+            check: {
+                options: {
+                    doctor: true
+                }
             }
         },
 
@@ -80,10 +142,10 @@ module.exports = function(grunt) {
                 deleteOriginals: true,
                 enableUrlFragmentHint: true,
                 ignorePatterns: [
-                    /*'/stylesheets/all.scss',*/ /* DONT cache-bust
-                                                     * the development reference
-                                                     */
-
+                    '/stylesheets/all.css', /* Dont cache-bust the
+                                             * development reference
+                                             */
+                    'static/images/meta/*',
                     /* Vendor assets don't change (much) */
                     '/vendor/bower_components/*'
                 ],
@@ -100,7 +162,9 @@ module.exports = function(grunt) {
     } );
 
     // Load our 3rd party plugins
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks( 'grunt-contrib-watch' );
+    grunt.loadNpmTasks( 'grunt-contrib-sass' );
+    grunt.loadNpmTasks( 'grunt-jekyll' );
     grunt.loadNpmTasks( 'grunt-contrib-csslint' );
     grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
     grunt.loadNpmTasks( 'grunt-data-uri' );
@@ -112,25 +176,38 @@ module.exports = function(grunt) {
      * on their developer VM.
      */
     grunt.registerTask( 'default', [
-        'csslint'
+        'csslint',
+        'sass',
+        'cssmin',
+        /*'dataUri',*/
+        'cacheBust',
+        'jekyll:dev',
+        'watch'
     ] );
 
     /* `syntax` task alias
      * Runs any Javascript and CSS code-quality tests
      */
     grunt.registerTask( 'syntax', [
-        'csslint'
+        'csslint',
+        'jekyll:check'
     ] );
 
+    /* Run the dev server.
+     */
+    grunt.registerTask( 'serve', [
+        'jekyll:server'
+    ]);
+
     /* Production build process.
-     * Use when cutting a release branch for production.
-     * Should only be run on release-x.y.z branches.
      */
     grunt.registerTask( 'build', [
         'csslint',
+        'sass',
         'cssmin',
-        'dataUri',
-        'cacheBust'
+        /*'dataUri',*/
+        'cacheBust',
+        'jekyll:master'
     ] );
 
 };

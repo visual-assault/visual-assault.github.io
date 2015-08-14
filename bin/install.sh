@@ -26,4 +26,4 @@ bundle install
 
 # Run your new jekyll site, locally
 echo "Try running Jekyll now:"
-echo "$ ./bin/run.sh"
+echo "$ grunt serve"

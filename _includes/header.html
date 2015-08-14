@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="initial-scale=1">
+  {% if site.is_dev %}
+  <link rel="stylesheet" href="/static/stylesheets/all.css">
+  {% else %}
   <link rel="stylesheet" href="/static/stylesheets/all.min.97e67d76.css">
+  {% endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="home" href="{{ site.url }}">
   {% if page.metaDescription %}
