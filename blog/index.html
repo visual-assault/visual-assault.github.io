@@ -2,7 +2,7 @@
 layout: page
 title: Blog
 displayTitle: Articles by visual assault
-in-nav: true
+inNav: true
 metaDescription: Articles written by visual assault
 ---
 <ol>
@@ -12,6 +12,10 @@ metaDescription: Articles written by visual assault
     <a href="{{ post.url }}" title="{{ post.title }}">
       <span>{{ post.title }}</span>
     </a>
+    <br>
+    {% if post.metaDescription %}
+    <span>{{ post.metaDescription }}</span>
+    {% endif %}
     <br>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%A %B %-d, %Y" }}</time>
   </li>

@@ -2,9 +2,15 @@
   <ul class="c-GlobalNav--List pure-menu-list">
   {% assign pages = site.pages | sort:"url" %}
   {% for p in pages %}
-  {% if p.in-nav == true %}
+  {% if p.inNav == true %}
     <li class="c-GlobalNav--Item pure-menu-item{% if p.url == page.url %} is-active{% endif %}">
-      <a class="c-GlobalNav--Link pure-menu-link" href="{{ p.url }}">{{ p.title }}</a>
+      <a class="c-GlobalNav--Link pure-menu-link" href="{{ p.url }}">
+        {% if p.navTitle %}
+        {{ p.navTitle }}
+        {% else %}
+        {{ p.title }}
+        {% endif %}
+      </a>
     </li>
     {% endif %}
   {% endfor %}

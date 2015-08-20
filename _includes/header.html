@@ -4,45 +4,65 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="initial-scale=1">
+
   {% if site.is_dev %}
   <link rel="stylesheet" href="/static/stylesheets/all.css">
   {% else %}
-  <link rel="stylesheet" href="/static/stylesheets/all.min.6ae8d6a0.css">
+  <link rel="stylesheet" href="/static/stylesheets/all.min.4142b0d0.css">
   {% endif %}
+
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="home" href="{{ site.url }}">
+
   {% if page.metaDescription %}
   <meta name="description" content="{{ page.metaDescription }}">
   {% else %}
   <meta name="description" content="{{ page.excerpt | strip_html }}">
   {% endif %}
+
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="/static/images/meta/icon-512x512.png">
+
+  {% if page.metaImage %}
+  <meta property="og:image" content="{{ site.url }}{{ page.metaImage }}">
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/static/images/meta/icon-512x512.png">
+  {% endif %}
+
   <meta property="og:image:height" content="512">
   <meta property="og:image:width" content="512">
+
   {% if page.metaOgType %}
   <meta property="og:type" content="{{ page.metaOgType }}">
   {% else %}
   <meta property="og:type" content="website">
   {% endif %}
+
   {% if page.metaDescription %}
   <meta property="og:description" content="{{ page.metaDescription }}">
   {% else %}
   <meta property="og:description" content="{{ page.excerpt | strip_html }}">
   {% endif %}
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:image" content="/static/images/meta/icon-512x512.png">
+
+  {% if page.metaImage %}
+  <meta property="twitter:image" content="{{ site.url }}{{ page.metaImage }}">
+  {% else %}
+  <meta property="twitter:image" content="{{ site.url }}/static/images/meta/icon-512x512.png">
+  {% endif %}
   <meta name="twitter:image:height" content="512">
   <meta name="twitter:image:width" content="512">
+
   {% if page.metaDescription %}
   <meta name="twitter:description" content="{{ page.metaDescription }}">
   {% else %}
   <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
   {% endif %}
+
   <meta name="twitter:site" content="@visualassault">
   <link rel="apple-touch-icon" sizes="57x57" href="/static/images/meta/icon-57x57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/static/images/meta/icon-72x72.png">

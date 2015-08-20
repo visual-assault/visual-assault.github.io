@@ -30,6 +30,7 @@ module.exports = function(grunt) {
                     'static/stylesheets/**/*.scss'
                 ],
                 tasks: [
+                    'clean',
                     'sass',
                     'postcss',
                     'cssmin',
@@ -48,6 +49,15 @@ module.exports = function(grunt) {
                 files: {
                     'static/stylesheets/all.css': 'static/stylesheets/all.scss'
                 }
+            }
+        },
+
+        clean : {
+            css : {
+                src : [
+                    "static/stylesheets/*.css",
+                    "static/stylesheets/*.map"
+                ]
             }
         },
 
@@ -187,6 +197,7 @@ module.exports = function(grunt) {
 
     // Load our 3rd party plugins
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
+    grunt.loadNpmTasks( 'grunt-contrib-clean' );
     grunt.loadNpmTasks( 'grunt-contrib-sass' );
     grunt.loadNpmTasks( 'grunt-jekyll' );
     grunt.loadNpmTasks( 'grunt-postcss' );
@@ -202,6 +213,7 @@ module.exports = function(grunt) {
      */
     grunt.registerTask( 'default', [
         'csslint',
+        'clean',
         'sass',
         'postcss',
         'cssmin',
@@ -229,6 +241,7 @@ module.exports = function(grunt) {
      */
     grunt.registerTask( 'build', [
         'csslint',
+        'clean',
         'sass',
         'postcss',
         'cssmin',

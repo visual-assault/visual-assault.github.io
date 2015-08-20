@@ -20,8 +20,12 @@
 .c-GlobalNav--Link:link {
   background-color: transparent;
   color: #292929;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   text-decoration: none;
+}
+.c-GlobalNav--Item:first-child .c-GlobalNav--Link:link {
+  padding-left: 0; 
 }
 .c-GlobalNav--Link:hover,
 .c-GlobalNav--Item.is-active .c-GlobalNav--Link {
