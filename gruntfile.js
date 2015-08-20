@@ -31,6 +31,7 @@ module.exports = function(grunt) {
                 ],
                 tasks: [
                     'sass',
+                    'postcss',
                     'cssmin',
                     'cacheBust',
                     'jekyll:dev'
@@ -47,6 +48,29 @@ module.exports = function(grunt) {
                 files: {
                     'static/stylesheets/all.css': 'static/stylesheets/all.scss'
                 }
+            }
+        },
+
+        /* Apply vendor prefixes to non-standard css properties.
+         */
+         postcss: {
+            options: {
+                map: {
+                    inline: false, // save all sourcemaps as separate files...
+                    annotation: 'static/stylesheets' // ...to the specified directory
+                },
+                processors: [
+                    // add vendor prefixes
+                    require('autoprefixer-core')({
+                        browsers: [
+                            'last 2 versions',
+                            '> 5%'
+                        ]
+                    })
+                ]
+            },
+            dist: {
+                src: 'static/stylesheets/all.css'
             }
         },
 
@@ -165,6 +189,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-contrib-sass' );
     grunt.loadNpmTasks( 'grunt-jekyll' );
+    grunt.loadNpmTasks( 'grunt-postcss' );
     grunt.loadNpmTasks( 'grunt-contrib-csslint' );
     grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
     grunt.loadNpmTasks( 'grunt-data-uri' );
@@ -178,6 +203,7 @@ module.exports = function(grunt) {
     grunt.registerTask( 'default', [
         'csslint',
         'sass',
+        'postcss',
         'cssmin',
         /*'dataUri',*/
         'cacheBust',
@@ -204,6 +230,7 @@ module.exports = function(grunt) {
     grunt.registerTask( 'build', [
         'csslint',
         'sass',
+        'postcss',
         'cssmin',
         /*'dataUri',*/
         'cacheBust',
