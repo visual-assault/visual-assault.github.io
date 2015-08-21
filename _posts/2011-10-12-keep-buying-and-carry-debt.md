@@ -5,6 +5,7 @@ displayTitle: "Visual Commentary Propaganda Pastiche"
 date: 2011-10-12 07:35:00
 metaDescription: "A visual commentary on the Keep Calm and Carry On poster"
 metaOgType: "article"
+metaImage: /static/images/2011-10-12-keep-buying-and-carry-debt.png
 author: Ron. A
 license: "cc-by"
 ---

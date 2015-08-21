@@ -240,7 +240,6 @@ module.exports = function(grunt) {
     /* Production build process.
      */
     grunt.registerTask( 'build', [
-        'csslint',
         'clean',
         'sass',
         'postcss',

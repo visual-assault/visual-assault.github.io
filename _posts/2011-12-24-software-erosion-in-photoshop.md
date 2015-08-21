@@ -5,6 +5,7 @@ displayTitle: "A Study of Adobe Photoshop Scrollbars"
 date: 2011-12-24 08:35:00
 metaDescription: "Evaluating software quality on visual polish"
 metaOgType: "article"
+metaImage: /static/images/2011-12-24-photoshop-scrollbar-study.png
 author: Ron. A
 license: "cc-by"
 ---
