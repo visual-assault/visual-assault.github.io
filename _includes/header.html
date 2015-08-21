@@ -8,7 +8,7 @@
   {% if site.is_dev %}
   <link rel="stylesheet" href="/static/stylesheets/all.css">
   {% else %}
-  <link rel="stylesheet" href="/static/stylesheets/all.min.4142b0d0.css">
+  <link rel="stylesheet" href="/static/stylesheets/all.min.b708d6a0.css">
   {% endif %}
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -83,24 +83,7 @@
 <header class="o-Layout pure-g c-Header">
   <div class="pure-u-sm-1-4">
     <a class="c-GlobalNav--Link" href="/" title="Home">
-      <svg xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="display:none">
-        <symbol id="square" viewbox="0 0 512 512">
-            <path class="c-Logo--Char c-Logo--Char---A is-animated"
-              d="M296.96,157.53h171.71L505,489H368l-1.55-53.26h-95.81L245.81,489H118.99L296.96,157.53z M364.34,354.94l0.39-124.88h-0.93l-55.92,124.88H364.34z"/>
-            <path class="c-Logo--Char c-Logo--Char---V"
-              d="M6,23h134.69l-8.29,258.94h0.93L237.88,23H364.7L200.16,354.47H28.91L6,23z"/>
-        </symbol>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        class="c-Logo"
-        width="64"
-        height="64"
-        viewBox="0 0 64 64">
-        <use xlink:href="#square" x="0" y="0" />
-      </svg>
+      {% include logo.html %}
     </a>
   </div>
   <div class="pure-u-sm-3-4">
