@@ -4,9 +4,9 @@ title: RASpec Impreza 2.0 - Subaru Impreza WRX STI Race Car for Sale
 navTitle: RASpec
 inNav: true
 displayTitle: visual assault / DSG RASpec Impreza 2.0
-metaDescription: Specs and sale of the visaul assault / DSG RASpec Impreza 2.0 Subaru WRX STI race car
+metaDescription: For Sale - RASpec Impreza 2.0 Subaru WRX STI race car - Full specifications and sale terms with photos
 metaOgType: "article"
-metaImage: /static/images/2015-08-15-raspec-impreza-rear.jpg
+metaImage: /static/images/2015-08-15-raspec-impreza-exterior-front-left-01-far.jpg
 author: Ron. A
 ---
 
@@ -17,7 +17,7 @@ car capable of competing in time attack, time trial, hillclimb and
 wheel-to-wheel racing series up and down the East Coast.
 
 <figure>
-  <img src="/static/images/2015-08-15-raspec-impreza-rear.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-01-far.jpg" alt>
   <figcaption>RASpec Impreza 2.0
   </figcaption>
 </figure>
@@ -30,6 +30,7 @@ in Massachusetts.
 The car is "turn-key" ready for racing.
 
 ### Sale Terms
+
 The car is for sale, but I'm thinking of this sale more as an adoption
 than as a sale. I'm lookging for someone who plans to enter it in serious
 races or track days. I wont be excited to sell the car to someone who
@@ -38,7 +39,7 @@ plans to part it out.
 The car is a full race car, and is **not street legal**, as such
 **the car will be sold "as-is"**.
 
-I accept **cash or cashiers check**, or bitcoin. I'll also consider
+I accept **cash or cashiers check**. I'll also **seriously** consider
 one-to-one trades for any of the following:
 
 * 2011-2014 Subaru WRX STI (Hatchback)
@@ -46,9 +47,17 @@ one-to-one trades for any of the following:
 * 2011-2014 Subaru WRX STI (Sedan)
 * 2015+ Subaru WRX or STI
 
-Contact me at
+The car is currently garaged in Somerville, Massachusetts, USA.
+
+Domestic and international shipping can be arranged.
+
+## Contact
+
+Email me at
 [raspec@visual-assault.org](mailto:raspec@visual-assault.org?subject=RASpec Sale Inquiry)
-to schedule a viewing or ask questions. Serious buyers only, please.
+to make and offer, schedule a viewing or to ask questions.
+
+Serious buyers only, please.
 
 ## Chassis
 
@@ -68,10 +77,11 @@ and the car was freshly painted white.
 * CHASSIS: The entire chassis has been seam-welded
 
 <figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-chassis-underbody.jpg" alt>
   <img src="/static/images/2015-08-15-raspec-impreza-chassis-rotis.jpg" alt>
   <img src="/static/images/2015-08-15-raspec-impreza-chassis-rotis-2.jpg" alt>
-  <figcaption>Chassis restoration, seam-weld and painting after media-blast.
-  </figcaption>
+  <figcaption>Chassis underbody, during restoration, seam-weld and
+    painting after media-blast.</figcaption>
 </figure>
 
 ## Engine
@@ -84,6 +94,11 @@ and the lightened, custom journaled crankshaft. The heads are sourced
 from a JDM Spec-C WRX STI that come from the factory with larger ports,
 and factory polished.
 
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-engine-all.jpg" alt>
+  <figcaption>Engine bay.</figcaption>
+</figure>
+
 The engine was built to tolerances provided by the team running the
 [Cusco / Tomei / Voltex Time Attack Impreza](http://www.superstreetonline.com/features/turp-0902-tomei-cusco-voltex-subaru-impreza-wrx-sti/)
 as they use the same engine stroker kit.
@@ -91,9 +106,24 @@ as they use the same engine stroker kit.
 The intake side has a custom fabricated front mounted intercooler (design
 is inspired by the Subaru Impreza WRC S10 design) pressurized by a Garrett
 GT3076R turbo using a TiAL GT30 turbine housing to feed the reverse mounted
-STI intake manifold. The turbo wastegate is a TiAL MR-R 44mm. The turbo
+STI intake manifold.
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-engine-intake.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-engine-intercooler.jpg" alt>
+  <figcaption>Engine intake and turbo. Intercooler detail.</figcaption>
+</figure>
+
+
+The turbo wastegate is a TiAL MR-R 44mm. The turbo
 uses the TiAL V-Band Clamp and Flange System to allow full 306 degree
 rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-engine-turbo.jpg" alt>
+  <figcaption>Garett GT3076r and TiAL turbine housing with v-band clamp.
+  TiAL wastegate.</figcaption>
+</figure>
 
 * ENGINE: JDM WRX STI EJ207 block
 * ENGINE: JDM WRX STI Spec-C heads (Ported & polished)
@@ -137,6 +167,13 @@ rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
 * LINKAGE: Kartboy short shifter linkage kit
 
 ## Suspension
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-coilovers.jpg" alt>
+  <figcaption>Stance GR+ adjustable coilovers with external resovoirs.
+  </figcaption>
+</figure>
+
 * COILOVERS: Stance GR+ 3-day adjustable coilovers
 * LINKS: Cusco 3-way adjustable rear sway bar
 * LINKS: Pillowball swaybar end links
@@ -151,15 +188,10 @@ rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
 * BRAKES: Stainless steel braided brake lines
 
 <figure>
-  <img src="/static/images/2015-08-15-raspec-impreza-suspension-coilovers.jpg" alt>
-  <figcaption>Chassis restoration, seam-weld and painting after media-blast.
-  </figcaption>
-</figure>
-
-<figure>
   <img src="/static/images/2015-08-15-raspec-impreza-suspension-rear.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-susp-studs.jpg" alt>
   <figcaption>Cusco 3-way adjustable rear sway bar on anodized Pillowball
-  endlinks. All hardware and mounts are new.
+  endlinks. All hardware and mounts are new. Wheel studs are the long-type.
   </figcaption>
 </figure>
 
@@ -169,7 +201,7 @@ rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
 * ENGINE: RC Engineering 1000cc injectors
 
 <figure>
-  <img src="/static/images/2015-08-15-raspec-impreza-sard.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-trunk-sard-surgetank.jpg" alt>
   <figcaption>SARD fuel surge tank located in the trunk.</figcaption>
 </figure>
 
@@ -179,15 +211,67 @@ rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
 monitor kit
 
 ## Exterior
+
+The exterior is stock, with a few OEM components. The front bumper is
+running the "Double Lip Combo" setup. The upper is the 2002 Prodrive V2
+lip and the lower is the 2006-2007 V-Limited lip.
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-01-near.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-02.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-03.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-04.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-bumper.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-left-engine.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-rear-01.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-rear-02.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-rear-03.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-rear-04.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-exterior-front-right-hood.jpg" alt>
+  <figcaption>Exterior photos.</figcaption>
+</figure>
+
 * COLOR: "Audi R8 White"
 * HOOD: Scoote carbon fiber 2002 WRX hood
 * HOOD: Aerocatch hood pins
 * LIP: Prodrive "V2" 2002 WRX lower front bumper lip
-* LIP: 2006 Subaru STI lower front bumper lip
-* FENDER: Rear wheel fenders are rolled & pulled to accomodate larger
+* LIP: 2006 Subaru STI V-Limited lower front bumper lip
+* FENDER: Rear wheel fenders are rolled & pulled to accommodate larger
+* BLINKER: STI carbon front blinker covers
+* HEADLIGHTS: Plasti-dipped headlights
 wheel/tires
 
 ## Interior
+
+The interior is fairly spartan and without adornment. Only the essentials.
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-all.jpg" alt>
+  <figcaption>Driver side interior view.</figcaption>
+</figure>
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-rollcage.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-safety-net.jpg" alt>
+  <figcaption>Passenger-side x-brace rollcage. Window safety net on driver
+  side.</figcaption>
+</figure>
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-shifter.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-controls.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-gaugepods.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-battery-switch.jpg" alt>
+  <figcaption>Shifter linkage. Dash controls. Defi gauge pod. Battery and
+  emergency cutoff switch.</figcaption>
+</figure>
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-interior-trunk-bulkhead.jpg" alt>
+  <figcaption>Beat Rush trunk bulkhead panel.</figcaption>
+</figure>
+
+* STEETING: MOMO steering wheel
 * SEAT: BRIDE Zeta-3 (Red)
 * GAUGES: Defi BF-series Oil pressure, Boost pressure & Water temperature
 * GAUGES: Digital A/F Meter
@@ -196,9 +280,18 @@ wheel/tires
 * SAFETY: NASCAR Window Net (Drivers side)
 * SAFETY: Beat Rush trunk bulkhead panel
 
-
 ## Spare Package
-* BRAKES: PF Performance Friction Drilled rotors (New)
+
+The car comes with additional spares, hardware and accessories.
+
+<figure>
+  <img src="/static/images/2015-08-15-raspec-impreza-other-hardware.jpg" alt>
+  <img src="/static/images/2015-08-15-raspec-impreza-spare-rotors.jpg" alt>
+  <figcaption>Spare hardware. Spare (new) Performance Friction rotors.
+  </figcaption>
+</figure>
+
+* BRAKES: PF Performance Friction rotors (New)
 * SUSPENSION: OEM STI Rear Lateral Links (New)
 * WHEELS: Enkei RC-T4 (4) (White) 17" x 8" P.C.D. 5x114.3 +35
 * FUEL: 15 gal VP 109 octane race gas
@@ -254,18 +347,19 @@ until there is nothing else to take away&mdash; creating a minimalist
 race-ready track platform.
 
 ## FAQ - Frequently Asked Questions
-* *Why are you selling it?*
+* *Why are you selling it?*<br>
 I recently bought a house in the city, so don't have a garage or parking
 space to keep the race car, my pickup truck or my trailer.
 [I'm selling the truck too, its a Ford F-350 Turbo Diesel](http://boston.craigslist.org/sob/cto/5178777331.html).
-* *What does it need to go racing?*
+* *What does it need to go racing?*<br>
 I would bleed the brakes and adjust the alignment. Alignment should be set
-to your preferences for how you like the car to turn-in and rotate.
-* *How many track miles on it?*
+to your preferences for how you like the car to turn-in and rotate. You
+may want to adjust the ride-height as well.
+* *How many track miles on it?*<br>
 None. The chassis has 0 track miles on it,
 and the engine has been freshly rebuilt. The only "time" its seen is on the
 dyno while it was being tuned.
-* *How much horsepower does it make?*
+* *How much horsepower does it make?*<br>
 That depends on which ECU map you
 run. Currently it's running a conservative base map dialed for 350 wheel
 horse power at 20lbs of boost. This tune was done at
