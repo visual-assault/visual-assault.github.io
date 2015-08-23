@@ -14,5 +14,26 @@
   {% if site.is_dev %}
   <script src="//localhost:35729/livereload.js"></script>
   {% endif %}
+
+  <script>
+    // Google Analytics placeholder
+    window._gaq = window._gaq || [];
+    window._gaq.push( ['_setSiteSpeedSampleRate', 75] );
+    window._gaq.push(
+      [ '_setAccount', 'UA-66660439-1' ],
+      [ '_setDomainName', 'visual-assault.org' ],
+      [ '_trackPageview' ]
+    );
+    if( window.navigator.doNotTrack !== "1") {
+      ( function() {
+          var ga = document.createElement( 'script' );
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = '//google-analytics.com/analytics.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore( ga, s );
+      } )();
+    }
+  </script>
 </body>
 </html>
