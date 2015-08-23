@@ -32,7 +32,7 @@ The car is "turn-key" ready for racing.
 ### Sale Terms
 
 The car is for sale, but I'm thinking of this sale more as an adoption
-than as a sale. I'm lookging for someone who plans to enter it in serious
+than as a sale. I'm looking for someone who plans to enter it in serious
 races or track days. I wont be excited to sell the car to someone who
 plans to part it out.
 
