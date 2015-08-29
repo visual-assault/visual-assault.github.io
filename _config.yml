@@ -20,7 +20,7 @@ exclude: [
   bower.json,
   Gemfile,
   Gemfile.lock,
-  gruntfile.js,
+  gulpfile.js,
   package.json,
   node_modules,
   LICENSE,
