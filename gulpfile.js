@@ -24,7 +24,7 @@ var config = {
     },
     minifyCss: {
         options: {
-            keepBreaks  : true,
+            keepBreaks  : false,
             advanced    : false,
             rebase      : false,
             debug       : true
@@ -32,8 +32,8 @@ var config = {
     },
     revReplace : {
         manifest: 'static/stylesheets/rev-manifest.json',
-        template: ['_includes/stylesheet_prod.html'],
-        templateDir: '_includes/'
+        src: ['_includes/header.html'],
+        srcDir: '_includes/'
     },
     sass: {
         src: 'static/stylesheets/all.scss',
@@ -61,6 +61,7 @@ var config = {
 
 var autoprefixer = require('gulp-autoprefixer'),
     csslint = require('gulp-csslint'),
+    del = require('del'),
     gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     minifyCss = require('gulp-minify-css'),
@@ -69,7 +70,8 @@ var autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload,
     rev = require('gulp-rev'),
-    revReplace = require('gulp-rev-replace');
+    revReplace = require('gulp-rev-replace'),
+    rename = require('gulp-rename');
 
 
 // CSS Lint task
@@ -87,6 +89,15 @@ gulp.task('jshint', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(jshint.reporter('fail'));
+});
+
+
+// Clean old files
+gulp.task('clean', function() {
+    return del([
+        'static/stylesheets/**/*.css',
+        'static/stylesheets/rev-manifest.json'
+    ]);
 });
 
 
@@ -109,7 +120,7 @@ gulp.task('sass', function () {
 
 
 // Sass post-processing with cache busted file-names and updated refs
-gulp.task('sass:build', function () {
+gulp.task('sass:build', ['clean'], function () {
     return gulp.src(config.sass.src)
         .pipe(
             sass(config.sass.options)
@@ -119,6 +130,7 @@ gulp.task('sass:build', function () {
             browsers: config.autoprefixer.browsers
         }))
         .pipe(minifyCss(config.minifyCss.options))
+        .pipe(rename('all.min.css'))
         .pipe(rev())
         .pipe(gulp.dest(config.sass.destBuild)) /* write output to src
                                                  * so that jekyll:build
@@ -169,9 +181,11 @@ gulp.task('jekyll:master', ['sass:build'], function() {
 // Updated rev'ed references
 gulp.task("revreplace", ['jekyll:master'], function() {
     var revManifest = gulp.src(config.revReplace.manifest);
-    return gulp.src(config.revReplace.template)
-        .pipe(revReplace({ manifest: revManifest}))
-        .pipe(gulp.dest(config.revReplace.templateDir));
+    return gulp.src(config.revReplace.src)
+        .pipe(revReplace({
+            manifest: revManifest
+        }))
+        .pipe(gulp.dest(config.revReplace.srcDir));
 });
 
 

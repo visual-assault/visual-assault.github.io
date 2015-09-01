@@ -8,9 +8,9 @@
   <link rel="home" href="{{ site.url }}">
 
 {% if site.is_dev %}
-  {% include stylesheet_dev.html %}
+  <link rel="stylesheet" href="/static/stylesheets/all.css">
 {% else %}
-  {% include stylesheet_prod.html %}
+  <link rel="stylesheet" href="/static/stylesheets/all-1c20d34839.min.css">
 {% endif %}
 
   {% if page.metaDescription %}
