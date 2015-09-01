@@ -14,10 +14,10 @@ Pages.
 ``` bash
 # To install dependencies
 ./bin/install.sh
-# Run Jekyll
-grunt serve
-# Watch source files
-grunt watch
+# Build and serve with live reloading.
+gulp
+# Build for production.
+gulp build
 ```
 
 ## Contributors
