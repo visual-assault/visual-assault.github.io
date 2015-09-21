@@ -7,7 +7,7 @@ metaDescription: "A visual commentary on the Keep Calm and Carry On poster"
 metaOgType: "article"
 metaImage: /static/images/2011-10-12-keep-buying-and-carry-debt.png
 author: Ron. A
-license: "cc-by"
+license: "cc-by-nc-ca"
 ---
 
 From comic book stores to Facebook to message boards, it seems that the "Keep

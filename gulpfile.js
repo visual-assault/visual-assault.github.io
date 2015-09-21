@@ -151,7 +151,6 @@ gulp.task('browser-sync', function() {
         }
     });
     gulp.watch(config.browserSync.jekyllSrc, ['jekyll:dev'])
-    gulp.watch(config.browserSync.jsSrc, ['jshint']);
     gulp.watch(config.browserSync.sassSrc, ['sass']);
 });
 
