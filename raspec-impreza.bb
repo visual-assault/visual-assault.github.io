@@ -27,12 +27,11 @@ plans to part it out.
 The car is a full race car, and is **not street legal**, as such
 **the car will be sold "as-is"**.
 
-I accept **cash or cashiers check**. Price is $25,000 I'll also **seriously** consider
+I accept **cash or cashiers check**. I'll also **seriously** consider
 one-to-one trades for any of the following:
 
 * 2011-2014 Subaru WRX STI (Hatchback)
 * 2011-2014 Subaru WRX (Hatchback)
-* 2011-2014 Subaru WRX STI (Sedan)
 * 2015+ Subaru WRX or STI
 
 The car is currently garaged in Somerville, Massachusetts, USA.
@@ -41,7 +40,7 @@ Domestic and international shipping can be arranged.
 
 ## Contact
 
-[URL="mailto:raspec@visual-assault.org?subject=RASpec Sale Inquiry"]Email me[/URL] to make and offer, schedule a viewing or to ask questions.
+[URL="mailto:raspec@visual-assault.org?subject=RASpec Sale Inquiry"]Email me[/URL] to make an offer, schedule a viewing or to ask questions.
 
 More pictures available here:
 [URL="http://visual-assault.org/raspec-impreza/"]http://visual-assault.org/raspec-impreza/[/URL]
