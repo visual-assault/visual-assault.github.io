@@ -11,6 +11,9 @@ license: cc-by-nc-sa
 ---
 
 
+![Mt. Isolation NH, USA](/static/images/2003-01-01-hikikomori-mt-isolation.jpg)
+
+
 ## Introduction
 
 
