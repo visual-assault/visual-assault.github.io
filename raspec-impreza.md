@@ -42,9 +42,7 @@ The car is a full race car, and is **not street legal**, as such
 I accept **cash or cashiers check**. I'll also **seriously** consider
 one-to-one trades for any of the following:
 
-* 2011-2014 Subaru WRX STI (Hatchback)
-* 2011-2014 Subaru WRX (Hatchback)
-* 2011-2014 Subaru WRX STI (Sedan)
+* 2011-2014 Subaru WRX or WRX STI (Hatchback)
 * 2015+ Subaru WRX or STI
 
 The car is currently garaged in Somerville, Massachusetts, USA.
@@ -55,7 +53,7 @@ Domestic and international shipping can be arranged.
 
 Email me at
 [raspec@visual-assault.org](mailto:raspec@visual-assault.org?subject=RASpec Sale Inquiry)
-to make and offer, schedule a viewing or to ask questions.
+to make an offer, schedule a viewing or to ask questions.
 
 Serious buyers only, please.
 
