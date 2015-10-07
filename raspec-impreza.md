@@ -39,7 +39,9 @@ plans to part it out.
 The car is a full race car, and is **not street legal**, as such
 **the car will be sold "as-is"**.
 
-I accept **cash or cashiers check**. I'll also **seriously** consider
+<a class="coinbase-button" data-code="59bcb2ad367c2f313b04f3b05bc65001" href="https://www.coinbase.com/checkouts/59bcb2ad367c2f313b04f3b05bc65001">Pay With Bitcoin</a><script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
+
+I accept **cash, bitcoin or cashiers check**. I'll also **seriously** consider
 one-to-one trades for any of the following:
 
 * 2011-2014 Subaru WRX or WRX STI (Hatchback)
