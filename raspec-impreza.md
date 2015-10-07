@@ -104,7 +104,7 @@ as they use the same engine stroker kit.
 The intake side has a custom fabricated front mounted intercooler (design
 is inspired by the Subaru Impreza WRC S10 design) pressurized by a Garrett
 GT3076R turbo using a TiAL GT30 turbine housing to feed the reverse mounted
-STI intake manifold.
+JDM STI intake manifold (no TGVs).
 
 <figure>
   <img src="/static/images/2015-08-15-raspec-impreza-engine-intake.jpg" alt>
@@ -142,7 +142,7 @@ rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
 * OIL: Crawford Performance Air/Oil Separator
 * RADIATOR: Koyo aluminum
 * INTERCOOLER: Griffin custom front mount intercooler (fmic)
-* EXHAUST: Titanium custom by DENT Sport Garage
+* EXHAUST: Stainless custom by DENT Sport Garage
 
 <figure>
   <img src="/static/images/2015-08-15-raspec-impreza-oil-cooler.jpg" alt>
@@ -159,7 +159,7 @@ rotation for optimal turbo positioning. **Put simply: "Its dope as fuck"**.
 * HARDWARE: Cusco transmission mount brackets
 * HARDWARE: Cusco transmission hard mount bushings
 * CONTROLLER: DCCDPro Delux DCCD controller
-* LSD: Front Cusco RS (1-way front)
+* LSD: OEM
 * LSD: Rear Cusro RS (1.5-way rear)
 * LSD: Center STI
 * LINKAGE: Kartboy short shifter linkage kit
