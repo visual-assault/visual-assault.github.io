@@ -59,6 +59,25 @@ to make an offer, schedule a viewing or to ask questions.
 
 Serious buyers only, please.
 
+
+## Video
+
+<figure>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/mciBcQ6PEAg" frameborder="0" allowfullscreen></iframe>
+    <figcaption>RASpec Impreza 1.0 at Carolina Motorsports Park, SC.
+        Redline Time Attack. Video captures engine sound at wide open
+        throttle.
+    </figcaption>
+</figure>
+
+<figure>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xl4FgxjwrZg" frameborder="0" allowfullscreen></iframe>
+    <figcaption>James Elterman and the Takata Impreza in chase of the
+    RASpec Impreza 1.0 during Sunday morning practice at Redline Time
+    Attack at Englishtown Raceway. Video by James Elterman.
+    </figcaption>
+</figure>
+
 ## Chassis
 
 The chassis is a 2002 model year, GDA/B code.
