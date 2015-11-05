@@ -540,10 +540,10 @@ of the development Docker container for the local dev environment.
       volumes:
         - "../../../app/apps:/var/app/app/apps"
         - "../../../app/dist:/var/app/app/dist"
+        - "../../../app/project:/var/app/app/project"
         - "../../../app/manage.py:/var/app/app/manage.py"
         - "../../../environments:/var/app/environments"
         - "../../../gulpfile.js:/var/app/gulpfile.js"
-        - "../../../project:/var/app/project"
       ports:
         - "80:8080"
         - "8010:8010"
@@ -594,7 +594,6 @@ testing locally prior to deployment to Amazon AWS.
       env_file: ../../../environments/prod/.env
       volumes:
         - "../../../docker/django/prod/gunicorn.conf.py:/etc/gunicorn/gunicorn.conf.py:ro"
-        - "../../../logs/gunicorn:/var/log/gunicorn"
         - "/var/app/app/dist"
 
     nginx:
@@ -604,7 +603,6 @@ testing locally prior to deployment to Amazon AWS.
       volumes:
         - "../../../docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
         - "../../../docker/nginx/sites-enabled.conf:/etc/nginx/conf.d/default.conf:ro"
-        - "../../../logs/nginx:/var/log/nginx"
       volumes_from:
         - django
       ports:
@@ -767,10 +765,6 @@ running on Amazon EC2 Container Service (ECS) platform.
                 "sourceVolume": "gunicorn-conf",
                 "containerPath": "/etc/gunicorn/gunicorn.conf.py",
                 "readOnly": true
-            },
-            {
-                "sourceVolume": "awseb-logs-django",
-                "containerPath": "/var/log/gunicorn"
             }
         ]
     },
