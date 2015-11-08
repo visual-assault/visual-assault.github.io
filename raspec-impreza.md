@@ -41,6 +41,8 @@ The car is a full race car, and is **not street legal**, as such
 
 <a class="coinbase-button" data-code="59bcb2ad367c2f313b04f3b05bc65001" href="https://www.coinbase.com/checkouts/59bcb2ad367c2f313b04f3b05bc65001">Pay With Bitcoin</a><script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
 
+[Listed on eBay](http://www.ebay.com/itm/321915534539?forcerRptr=true&item=321915534539&viewitem=#viTabs_0).
+
 I accept **cash, bitcoin or cashiers check**. I'll also **seriously** consider
 one-to-one trades for any of the following:
 
