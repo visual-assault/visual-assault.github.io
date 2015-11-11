@@ -41,11 +41,11 @@ The car is a full race car, and is **not street legal**, as such
 
 <a class="coinbase-button" data-code="59bcb2ad367c2f313b04f3b05bc65001" href="https://www.coinbase.com/checkouts/59bcb2ad367c2f313b04f3b05bc65001">Pay With Bitcoin</a><script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
 
-I accept **cash, bitcoin or cashiers check**. I'll also **seriously** consider
-one-to-one trades for any of the following:
+I accept **cash, bitcoin, certified or cashiers check**. I'll also
+**seriously** consider one-to-one trades for any of the following:
 
-* 2011-2014 Subaru WRX or WRX STI (Hatchback)
-* 2015+ Subaru WRX or STI
+* 2011+ Subaru Impreza, WRX or STI
+* 2012+ Subaru XV CrossTrek
 
 The car is currently garaged in Somerville, Massachusetts, USA.
 
@@ -80,7 +80,7 @@ Serious buyers only, please.
 
 ## Chassis
 
-The chassis is a 2002 model year, GDA/B code.
+The chassis is a 2002 model year, GDA/B code VIN #`JF1GD29642G507991` 
 
 The restoration began with a complete tear-down. Everything not welded to
 the chassis was removed, tagged and inspected. Anything not required for
@@ -107,7 +107,8 @@ and the car was freshly painted white.
 
 The RASpec Impreza engine is a JDM EJ207 WRX STI 2-liter engine running
 the
-[Tomei 2.2l stroker kit](http://www.tomeiusa.com/_2003web-catalogue/efr_set-from_top-menu/efr_index-com-genesis.html).
+[Tomei 2.2l
+stroker kit](http://www.tomeiusa.com/_2003web-catalogue/efr_set-from_top-menu/efr_index-com-genesis.html).
 The Tomei 2.2l stroker kit was chosen as it is complete with pistons, rods
 and the lightened, custom journaled crankshaft. The heads are sourced
 from a JDM Spec-C WRX STI that come from the factory with larger ports,
@@ -119,7 +120,8 @@ and factory polished.
 </figure>
 
 The engine was built to tolerances provided by the team running the
-[Cusco / Tomei / Voltex Time Attack Impreza](http://www.superstreetonline.com/features/turp-0902-tomei-cusco-voltex-subaru-impreza-wrx-sti/)
+[Cusco / Tomei / Voltex Time
+Attack Impreza](http://www.superstreetonline.com/features/turp-0902-tomei-cusco-voltex-subaru-impreza-wrx-sti/)
 as they use the same engine stroker kit.
 
 The intake side has a custom fabricated front mounted intercooler (design
@@ -319,15 +321,18 @@ The car comes with additional spares, hardware and accessories.
 ## History
 
 The first race car I built with the name "RASpec Impreza 1.0" began in
-[2004 when I started a thread on NASIOC](http://forums.nasioc.com/forums/showthread.php?s=&threadid=555979)
+[2004 when I started a thread
+on NASIOC](http://forums.nasioc.com/forums/showthread.php?s=&threadid=555979)
 asking for advice about building a race car. I just just recently upgraded
 from a 2001 Impreza 2.5RS to the 2004 "blobeye" WRX. Shortly after
-[I signed up for my first track event with the BMW-CCA](http://forums.nasioc.com/forums/showthread.php?t=649784)
+[I signed up for my first track event with
+the BMW-CCA](http://forums.nasioc.com/forums/showthread.php?t=649784)
 and was totally addicted to track events. A month later
 [I caged my car](http://forums.nasioc.com/forums/showthread.php?t=661055)
 and began its migration from a humble street car to a battle-tested
 time attack machine. The
-[full history of the build process is available on NASIOC](http://forums.nasioc.com/forums/showthread.php?t=1510583&page=20).
+[full history of the build process is
+available on NASIOC](http://forums.nasioc.com/forums/showthread.php?t=1510583&page=20).
 
 <figure>
   <img src="/static/images/2015-08-15-raspec-impreza-racing.jpg" alt>
@@ -369,11 +374,17 @@ race-ready track platform.
 * *Why are you selling it?*<br>
 I recently bought a house in the city, so don't have a garage or parking
 space to keep the race car, my pickup truck or my trailer.
-[I'm selling the truck too, its a Ford F-350 Turbo Diesel](http://boston.craigslist.org/sob/cto/5178777331.html).
+* *What makes the car track-only?*<br>
+Its a fully-built race car, so its been stripped to the bare essentials. This
+means no headlights, no wiper bottle, no seatbelts (harness only), no OEM
+seat brackets, no ODB-II.
+* *Do you have the title?*<br>
+Yes. The VIN number is `JF1GD29642G507991` and it had one owner before me.
+The title is clean, no accidents. Feel free to run a CarFax.
 * *What does it need to go racing?*<br>
-I would bleed the brakes and adjust the alignment. Alignment should be set
-to your preferences for how you like the car to turn-in and rotate. You
-may want to adjust the ride-height as well.
+I would get new tires, bleed the brakes and adjust the alignment. Alignment
+should be set to your preferences for how you like the car to turn-in and
+rotate. You may want to adjust the ride-height as well.
 * *How many track miles on it?*<br>
 None. The chassis has 0 track miles on it,
 and the engine has been freshly rebuilt. The only "time" its seen is on the
