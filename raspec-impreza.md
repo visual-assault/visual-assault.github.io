@@ -36,6 +36,10 @@ than as a sale. I'm looking for someone who plans to enter it in serious
 races or track days. I wont be excited to sell the car to someone who
 plans to part it out.
 
+The car is [Listed
+on eBay](http://www.ebay.com/itm/321915534539?forcerRptr=true&item=321915534539&viewitem=#viTabs_0)
+but I'm also taking offers.
+
 The car is a full race car, and is **not street legal**, as such
 **the car will be sold "as-is"**.
 
@@ -80,7 +84,7 @@ Serious buyers only, please.
 
 ## Chassis
 
-The chassis is a 2002 model year, GDA/B code VIN #`JF1GD29642G507991` 
+The chassis is a 2002 model year, GDA/B code VIN #`JF1GD29642G507991`
 
 The restoration began with a complete tear-down. Everything not welded to
 the chassis was removed, tagged and inspected. Anything not required for
