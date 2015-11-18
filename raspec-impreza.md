@@ -318,7 +318,6 @@ The car comes with additional spares, hardware and accessories.
 
 * BRAKES: PF Performance Friction rotors (New)
 * SUSPENSION: OEM STI Rear Lateral Links (New)
-* WHEELS: Enkei RC-T4 (4) (White) 17" x 8" P.C.D. 5x114.3 +35
 * FUEL: 15 gal VP 109 octane race gas
 * WING: Origin GT Wing (plane only)
 
