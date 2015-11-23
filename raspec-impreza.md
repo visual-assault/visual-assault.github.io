@@ -27,43 +27,6 @@ restored from 2013 to 2015. The car was built by DENT Sport Garage and
 [German Performance Service](http://www.germanperformanceservice.com/)
 in Massachusetts.
 
-The car is "turn-key" ready for racing.
-
-### Sale Terms
-
-The car is for sale, but I'm thinking of this sale more as an adoption
-than as a sale. I'm looking for someone who plans to enter it in serious
-races or track days. I wont be excited to sell the car to someone who
-plans to part it out.
-
-The car is [Listed
-on eBay](http://www.ebay.com/itm/321915534539?forcerRptr=true&item=321915534539&viewitem=#viTabs_0)
-but I'm also taking offers.
-
-The car is a full race car, and is **not street legal**, as such
-**the car will be sold "as-is"**.
-
-<a class="coinbase-button" data-code="59bcb2ad367c2f313b04f3b05bc65001" href="https://www.coinbase.com/checkouts/59bcb2ad367c2f313b04f3b05bc65001">Pay With Bitcoin</a><script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
-
-I accept **cash, bitcoin, certified or cashiers check**. I'll also
-**seriously** consider one-to-one trades for any of the following:
-
-* 2011+ Subaru Impreza, WRX or STI
-* 2012+ Subaru XV CrossTrek
-
-The car is currently garaged in Somerville, Massachusetts, USA.
-
-Domestic and international shipping can be arranged.
-
-## Contact
-
-Email me at
-[raspec@visual-assault.org](mailto:raspec@visual-assault.org?subject=RASpec Sale Inquiry)
-to make an offer, schedule a viewing or to ask questions.
-
-Serious buyers only, please.
-
-
 ## Video
 
 <figure>
@@ -374,16 +337,11 @@ until there is nothing else to take away&mdash; creating a minimalist
 race-ready track platform.
 
 ## FAQ - Frequently Asked Questions
-* *Why are you selling it?*<br>
-I recently bought a house in the city, so don't have a garage or parking
-space to keep the race car, my pickup truck or my trailer.
+
 * *What makes the car track-only?*<br>
 Its a fully-built race car, so its been stripped to the bare essentials. This
 means no headlights, no wiper bottle, no seatbelts (harness only), no OEM
 seat brackets, no ODB-II.
-* *Do you have the title?*<br>
-Yes. The VIN number is `JF1GD29642G507991` and it had one owner before me.
-The title is clean, no accidents. Feel free to run a CarFax.
 * *What does it need to go racing?*<br>
 I would get new tires, bleed the brakes and adjust the alignment. Alignment
 should be set to your preferences for how you like the car to turn-in and
