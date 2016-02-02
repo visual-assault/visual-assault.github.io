@@ -8,9 +8,20 @@
     {% endif %}
     </h1>
 
+    <div class="t-visuallyhidden">
+      <span class="entry-summary p-summary">
+        {{ page.excerpt | strip_html }}
+      </span>
+      <a href="{{ site.url }}{{ page.url }}"
+        class="u-url"
+        rel="bookmark">
+        {{ page.displayTitle }}
+      </a>
+    </div>
+
     {% if page.date %}
     <time class="published updated dt-published"
-      datetime="{{ page.date | date: "%Y-%m-%d" }}"
+      datetime="{{ page.date | date_to_xmlschema }}"
       pubdate>
       {{ page.date | date: "%A %B %-d, %Y" }}
     </time>
@@ -18,9 +29,9 @@
 
     {% if page.author %}
     <br>
-    <span class="byline vcard h-card">
+    <span class="byline author vcard h-card">
       by:
-      <span class="author p-author p-name fn">
+      <span class="author fn p-author p-name">
         {{ page.author }}
       </span>
     </span>
