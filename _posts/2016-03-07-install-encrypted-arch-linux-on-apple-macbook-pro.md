@@ -1109,7 +1109,7 @@ Feel free to skip this next part, where we'll install a nicer-looking
 and super-simple greeter theme.
 
     cd /usr/share/lightdm-webkit/themes
-    # sudo git clone https://github.com/0xadada/lightdm-webkit2-theme-kiss.git
+    # sudo git clone https://github.com/0xadada/lightdm-webkit2-theme-kiss.git kiss
 
 To enable the  LightDM webkit2 greeter to load this theme, edit
 `/etc/lightdm/lightdm-webkit2-greeter.conf` to have the following contents:
