@@ -24,6 +24,7 @@ with other operating systems and distros, and a number of window
 managers I've tried.
 
 My decisions (take them or leave them):
+
 * Distribution: Arch Linux
 * Full disk encryption: On
 * Window Manager: Awesome
