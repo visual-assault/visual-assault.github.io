@@ -589,6 +589,7 @@ partition:
 Lets also mount our boot partition, while we're here. This is required so
 our bootable initramfs can be written to the boot drive:
 
+    mkdir -p /mnt/boot
     mount /dev/sda1 /mnt/boot
 
 If you're interested in swap partition schemes, [check this script
@@ -635,7 +636,7 @@ While it’s normally a good idea to use UUIDs to find disks, we’re going to u
 labels. This is because our encryption setup generates random IDs for the disks
 when they’re decrypted. Let’s create the `fstab` file:
 
-    genfstab -L -p /mnt &gt;&gt; /mnt/etc/fstab
+    genfstab -L -p /mnt >> /mnt/etc/fstab
 
 The `-L` flag will generate the fstab file with labels instead of UUIDs.
 The `-p` flag prevents pseudo-filesystems from being added.
@@ -649,7 +650,7 @@ It should look something like this:
     #
     # /etc/fstab: static file system information
     #
-    # &lt;file system&gt;    &lt;dir&gt;&lt;type&gt;&lt;options&gt;             &lt;dump&gt;&lt;pass&gt;
+    # <file system>    <dir><type><options>             <dump><pass>
     # /dev/mapper/vgcrypt-root
     /dev/mapper/vgcrypt-root    /           ext4   discard,rw,relatime,data=ordered    0 1
 
@@ -681,7 +682,7 @@ Now generate the locales:
 
 Make English UTF-8 the default:
 
-    echo LANG=en_US.UTF-8 &gt; /etc/locale.conf
+    echo LANG=en_US.UTF-8 > /etc/locale.conf
 
 The default font in the virtual console is not very readable, so lets use
 one that is far more readable. We're going to use the typeface "Terminus"
@@ -729,7 +730,7 @@ replace INTERFACE with your interfaces name.
 Finally, let’s configure the machine’s hostname. You can change `macbook`
 to whatever you'd like:
 
-    echo macbook &gt; /etc/hostname
+    echo macbook > /etc/hostname
 
 Add this hostname to the list of hosts. Edit `/etc/hosts` and edit so it
 looks something like this:
@@ -738,7 +739,7 @@ looks something like this:
     # /etc/hosts: static lookup table for host names
     #
 
-    #&lt;ip-address&gt;   &lt;hostname.domain.org&gt;   &lt;hostname&gt;
+    #<ip-address>   <hostname.domain.org>   <hostname>
     127.0.0.1   localhost.localdomain   localhost   macbook
     ::1     localhost.localdomain   localhost   macbook
 
@@ -994,7 +995,7 @@ key](https://bbs.archlinux.org/viewtopic.php?id=162098) to the package
 database, update the package database and install the packages.
 
     # pacman-key -r 962DDE58
-    # pacman-key -lsign-key 962DDE58
+    # pacman-key --lsign-key 962DDE58
     # pacman -Syyu
     # pacman -S infinality-bundle
     # pacman -S infinality-bundle-fonts
@@ -1148,6 +1149,7 @@ We need to stop the dhcpcd service we were using for the ethernet and start
 the Network Manager service. Keeping both running can cause conflicts.
 
     # systemctl disable dhcpcd.service
+    # pacman -S NetworkManager
     # systemctl enable NetworkManager.service
 
 Finally, if you find your wireless is dropping connections, you may find
