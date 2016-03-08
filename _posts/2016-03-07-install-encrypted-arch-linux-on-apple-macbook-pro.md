@@ -1346,7 +1346,7 @@ bind keyboard keys to commands. We will bind keys for volume, keyboard and
 display brightness.
 
     # pacman -S xbindkeys
-    yaourt -S xbacklight kbdlight
+    yaourt -S xorg-xbacklight kbdlight
 
 Create your configuration file for xbindkeys: `.xbindkeysrc`
 
