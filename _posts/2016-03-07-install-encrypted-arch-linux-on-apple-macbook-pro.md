@@ -77,8 +77,10 @@ If you just want to get on to the installation, skip to this link:
   * [CPU Frequency Scaling](#cpu-frequency-scaling)
   * [Fan Control](#fan-control)
   * [Apple Keyboard](#apple-keyboard)
+  * [Apple Trackpad](#apple-trackpad)
 * [Conclusion](#conclusion)
 * [References](#references)
+* [Updates](#updates)
 
 
 This article will be installing Arch Linux alongside OS X, dual-booting such
@@ -1147,7 +1149,7 @@ uninstall and reinstall the `broadcom-wl` package so it updates with the new
 linux-header.
 
 We need to stop the dhcpcd service we were using for the ethernet and start
-the `wifi-menu` utility. Keeping both running can cause conflicts.
+the `wifi-menu`<sup>[1](#1)</sup> utility. Keeping both running can cause conflicts.
 
     # systemctl disable dhcpcd.service
     # wifi-menu
@@ -1244,7 +1246,7 @@ this as your normal user, not as root.
 
 The power management from Arch out of the box is not very good.
 There are a few good tools out there, but `PowerTOP` is nice because of
-its benchmarking utilities.
+its benchmarking utilities<sup>[2](#2)</sup>.
 
 > PowerTOP is a tool provided by Intel to enable various powersaving modes
 > in userspace, kernel and hardware. It is possible to monitor processes
@@ -1379,6 +1381,36 @@ file:
         xbindkeys
     fi;
 
+### Apple Trackpad
+
+Finally<sup>[3](#3)</sup>, we'll setup a Bluetooth Apple Trackpad. To do this, we'll install some bluetooth core
+utilities
+
+    # pacman -S bluez bluez-utils
+    # modprobe btusb  # Make sure bluetooth kernel module is loaded
+    # systemctl enable bluetooth.service  # Start bluetooth on reboot
+    # systemctl start bluetooth.service
+    
+To actually connect to the Trackpad, we'll use the `bluetoothctl` interactive 
+utility to scan-for, discover, pair and connect to the Trackpad. (If your Trackpad
+is already paired with another device, make sure to turn it off, then long-hold
+the power button until the LED flashes.)
+
+    $ bluetoothctl
+    > power on
+    > scan on
+    > agent on
+    > devices    # You should see the MAC address of your Trackpad appear if its in discoverable mode
+    > pair mac 28:37:37:2B:42:7A
+    > connect 28:37:37:2B:42:7A
+
+Then we'll setup some `udev` rules so USB Bluetooth is activated and loade when
+the system boots up.
+
+    # /etc/udev/rules.d/10-local.rules
+    # Set bluetooth power up
+    ACTION=="add", KERNEL=="hci0", RUN+="/usr/bin/hciconfig hci0 up"
+
 
 ## Conclusion
 
@@ -1401,3 +1433,17 @@ inspiration.
 * [ArchWiki MacBookPro11,x](https://wiki.archlinux.org/index.php/MacBookPro11,x)
 * [Arch Linux Running on my
    MacBook - Phil Plückthun](https://medium.com/@philpl/arch-linux-running-on-my-macbook-2ea525ebefe3#.ai90cnihe)
+
+
+## Updates
+
+Any changes to this article will be annotated with a footnote and explained here.
+
+1. <a name=1></a>
+  Previously used `NetworkManager` to detect and connect to WiFi networks, but
+  have changed to use `netctl` and `wifi-menu` as these commands are more low-level and have fewer
+  dependencies.
+1. <a name=2></a>
+   Previously omitted the `-S` option in `yaourt`, fixed.
+1. <a name=3></a>
+  Added a section covering the Apple Trackpad.
