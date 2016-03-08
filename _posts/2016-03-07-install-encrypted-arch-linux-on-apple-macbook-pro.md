@@ -1136,7 +1136,7 @@ driver: `broadcom-wl`. I actually don’t think this even officially supports th
 BCM4360 chipset, but it works well enough. We’ll need to install the AUR
 package:
 
-    $ yaourt broadcom-wl
+    $ yaourt -S broadcom-wl
 
 And activate the kernel module:
 
@@ -1252,7 +1252,7 @@ its benchmarking utilities.
 > Idle-States, allowing you to identify applications with particular high
 > power demands.
 
-    yaourt powertop
+    yaourt -S powertop
 
 You may want to put your laptop on battery power and calibrate powertop:
 
@@ -1293,7 +1293,7 @@ information using the command `acpi -v`. To install:
 Intel provides a daemon that will keep tabs on the CPUs’ temperature and
 adjust settings to keep it from getting too hot, its called `thermald`.
 
-    $ yaourt thermald
+    $ yaourt -S thermald
     # systemctl enable thermald.service
     # systemctl start thermald.service
 
@@ -1304,7 +1304,7 @@ Another utility that will help with CPU frequency scaling is `cpupower`,
 it provides useful CLI utilities and a systemd service to change the CPU
 governor at boot.
 
-    $ yaourt cpupower
+    $ yaourt -S cpupower
     # systemctl enable cpupower
     # systemctl start cpupower
 
@@ -1325,7 +1325,7 @@ fan. The following script helps add fine-tuning for the fan that will
 increase its baseline speed and ramp it up gently, so it’s not an
 all-or-nothing kind of setup.
 
-    $ yaourt mbpfan-git
+    $ yaourt -S mbpfan-git
     # systemctl enable mbpfan.service
     # systemctl start mbpfan.service
 
