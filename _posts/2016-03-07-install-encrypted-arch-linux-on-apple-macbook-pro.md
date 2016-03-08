@@ -1439,11 +1439,11 @@ inspiration.
 
 Any changes to this article will be annotated with a footnote and explained here.
 
-1. <a name="1"></a>
+1. <a name="1">
   Previously used `NetworkManager` to detect and connect to WiFi networks, but
   have changed to use `netctl` and `wifi-menu` as these commands are more low-level and have fewer
-  dependencies.
-1. <a name="2"></a>
-   Previously omitted the `-S` option in `yaourt`, fixed.
-1. <a name="3"></a>
-  Added a section covering the Apple Trackpad.
+  dependencies.</a>
+1. <a name="2">
+   Previously omitted the `-S` option in `yaourt`, fixed.</a>
+1. <a name="3">
+  Added a section covering the Apple Trackpad.</a>
