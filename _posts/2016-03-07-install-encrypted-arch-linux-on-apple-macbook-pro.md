@@ -1445,5 +1445,5 @@ Any changes to this article will be annotated with a footnote and explained here
   dependencies.</div>
 1. <div id="2"><a name="2"></a>
    Previously omitted the `-S` option in `yaourt`, fixed.</div>
-1. <div id="3><a name="3"></a>
+1. <div id="3"><a name="3"></a>
   Added a section covering the Apple Trackpad.</div>
