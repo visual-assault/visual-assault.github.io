@@ -1092,7 +1092,8 @@ you can [view it on the web](https://fiddle.jshell.net/0xADADA/nqynn75j/show/)
 First we'll install LightDM itself, along with the Webkit2 greeter, then
 my custom theme.
 
-    # pacman -S lightdm lightdm-webkit2-greeter
+    # pacman -S lightdm
+    yaourt -S lightdm-webkit2-greeter
 
 Verify the `lightdm-webkit2-greeter` is loaded in the LightDM config file
 located at `/etc/lightdm/lightdm.conf`, it should have a line like this:
@@ -1146,11 +1147,19 @@ uninstall and reinstall the `broadcom-wl` package so it updates with the new
 linux-header.
 
 We need to stop the dhcpcd service we were using for the ethernet and start
-the Network Manager service. Keeping both running can cause conflicts.
+the `wifi-menu` utility. Keeping both running can cause conflicts.
 
     # systemctl disable dhcpcd.service
-    # pacman -S NetworkManager
-    # systemctl enable NetworkManager.service
+    # wifi-menu
+
+This will create and enable a systemd service that will start when the
+computer boots. Changes to the profile file will not propagate to the service
+file automatically. After such changes, it is necessary to reenable the
+profile:
+
+    # netctl reenable PROFILE
+
+After enabling a profile, it will be started at next boot.
 
 Finally, if you find your wireless is dropping connections, you may find
 turning off Wi-Fi power management. Simply create this as an executable (
@@ -1164,7 +1173,7 @@ chmod +x `/etc/pm/wireless` and add the following contents:
 
 Now when you reboot, you should be all set to go start customizing to your
 heart’s content, adding applications as you’d like, and playing around with
-your new Arch Linux box with Awesome.
+your new Arch Linux box with Awesome.s
 
 ## Fine Tuning
 
