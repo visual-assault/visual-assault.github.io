@@ -1438,6 +1438,5 @@ Any changes to this article will be annotated with a footnote and explained here
 1. <div id="3"><a name="3"></a>
    March 8, 2016: Added a section covering the Apple Trackpad.</div>
 1. <div id="4"><a name="4"></a>
-   March 14, 2016: Thanks to
-   [Fr0gm4n](https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3)
-   for simplifying the creation of USB `iso` images.</div>
+   March 14, 2016: Thanks Fr0gm4n for suggestions simplifying the writing of `iso` images to USB.</div>
+   [Reddit link](https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3)
