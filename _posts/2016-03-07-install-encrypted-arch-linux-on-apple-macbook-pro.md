@@ -320,16 +320,6 @@ After that’s run, the USB drive should be ready to boot from.
 
 #### Part B - Preparing the Installation USB Drive for OSX
 
-The ISO image downloaded earlier needs to be in Read/Write Universal Disk
-Image Format (UDRW) format. Use the command line tool `hdiutil` to convert
-the file. Replace `SOURCE` with the ISO file name you downloaded earlier,
-and `DESTINATION` with a sensible filename.
-
-    hdiutil convert -format UDRW -o DESTINATION.img SOURCE.iso
-
-The resulting image will actually be called `DESTINATION.img.dmg` as
-`hdiutil` will append that suffix.
-
 Now we’re ready to get that ISO onto a USB drive so we can boot the computer
 from it. Before inserting the thumb drive, run `diskutil list` and take note of the
 drives listed. You should see output similar to this:
@@ -374,13 +364,13 @@ noted above.
 
     diskutil partitionDisk /dev/diskX 1 "Free Space" "unused" "100%"
 
-Now we can write the converted image file we created earlier to the USB
+Now<sup>[4](#4)</sup> we can write the iso file to the USB
 drive. **Note** We use `/dev/rdisk*` instead of `/dev/disk` because
 it provides Raw disk access without the typical buffering the operating
-systemprovides. Substitute `DESTINATION` with the name of the image file
-you created earlier, and substitute the `X` with the number of the drive.
+systemprovides. Substitute `DESTINATION` with the name of the `iso` file
+you downloaded earlier, and substitute the `X` with the number of the drive.
 
-    dd if=DESTINATION.img.dmg of=/dev/rdiskX bs=1m
+    dd if=DESTINATION.iso of=/dev/rdiskX bs=1m
 
 The `dd` command does not show any output before it has finished the copy
 process, so be patient and wait for it to complete, it can take around
@@ -1447,3 +1437,7 @@ Any changes to this article will be annotated with a footnote and explained here
    March 8, 2016: Previously omitted the `-S` option in `yaourt`, fixed.</div>
 1. <div id="3"><a name="3"></a>
    March 8, 2016: Added a section covering the Apple Trackpad.</div>
+1. <div id="4"><a name="4"></a>
+   March 14, 2016: Thanks to
+   [Fr0gm4n](https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3)
+   for simplifying the USB `iso` USB section.</div>
