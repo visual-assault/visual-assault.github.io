@@ -1438,5 +1438,5 @@ Any changes to this article will be annotated with a footnote and explained here
    March 8, 2016: Added a section covering the Apple Trackpad.</div>
 1. <div id="4"><a name="4"></a>
    March 14, 2016: Thanks <a href="https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3">Fr0gm4n</a> for suggestions simplifying the writing of `iso` images to USB.</div>
-1. <div id=5><a name="5"></a>
+1. <div id="5"><a name="5"></a>
    March 18, 2016: Changed references to `.Xinitrc` to the correct filename, `.xinitrc`.</div>
