@@ -73,8 +73,10 @@ If you just want to get on to the installation, skip to this link:
   * [Display Color Profile](#display-color-profile)
   * [Display Color Correction](#display-color-correction)
   * [Power Management](#power-management)
-  * [Temperature Management](#temperature-management)
+  * [Laptop Mode Tools](#laptop-mode-tools)
+  * [acpid](#acpid)
   * [CPU Frequency Scaling](#cpu-frequency-scaling)
+  * [Temperature Management](#temperature-management)
   * [Fan Control](#fan-control)
   * [Apple Keyboard](#apple-keyboard)
   * [Apple Trackpad](#apple-trackpad)
@@ -1273,20 +1275,60 @@ current boot session.
     # systemctl enable powertop.service
     # systemctl start powertop.service
 
+
+### Laptop Mode Tools
+
+Laptop Mode Tools<sup>[6](#6)</sup> is a laptop power saving package for
+Linux systems. It is the primary way to enable the Laptop Mode feature of
+the Linux kernel, which allows you to tweak a number of other power-related
+settings using a simple configuration file. Combined with `acpid` and CPU
+frequency scaling, LMT provides a complete notebook power management suite.
+
+    $ yaourt -S laptop-mode-tools
+
+If you want to enable laptop mode even on AC power, because you run the laptop
+attached to an external keyboard and monitor, edit:
+
+    # /etc/laptop-mode/laptop-mode.conf`:
+    ...
+    ENABLE_LAPTOP_MODE_ON_AC=1
+    ...
+    ENABLE_LAPTOP_MODE_WHEN_LID_CLOSED=1
+
+We're going to disable LMT from handling CPU frequency scaling since
+we've setup `cpupower` to handle that:
+
+    # /etc/laptop-mode/conf.d/cpufreq.conf
+    ... 
+    # CONTROL_CPU_FREQUENCY="AUTO"
+    CONTROL_CPU_FREQUENCY=0
+
+and disable Intel pstate handling as well:
+
+    # /etc/laptop-mode/conf.d/intel_pstate.conf
+    # CONTROL_INTEL_PSTATE="auto"
+    CONTROL_INTEL_PSTATE=0
+
+
+Finally, enable and start the systemd service:
+
+    # systemctl enable laptop-mode.service
+    # systemctl start  laptop-mode.service
+
+
+### acpid
+
 A very useful tool is from the `acpi` package, which provides battery
 information using the command `acpi -v`. To install:
 
     # pacman -S acpi
 
+`acpid` is an extensible daemon for handling ACPI events. It can run
+commands when the laptop lid is closed, etc.
 
-### Temperature Management
-
-Intel provides a daemon that will keep tabs on the CPUs’ temperature and
-adjust settings to keep it from getting too hot, its called `thermald`.
-
-    $ yaourt -S thermald
-    # systemctl enable thermald.service
-    # systemctl start thermald.service
+    # pacman -S acpid
+    # systemctl enable acpid.service
+    # systemctl start  acpid.service
 
 
 ### CPU Frequency Scaling
@@ -1299,14 +1341,23 @@ governor at boot.
     # systemctl enable cpupower
     # systemctl start cpupower
 
-I use cpupower to limit the CPU’s max speed. This keeps CPU in check from
+I use cpupower to modulate the CPU’s speeds. This keeps CPU in check from
 maxing out at all times. My cpupower config file at `/etc/default/cpupower`
-has the following two lines uncommented:
+has the following line changed:
 
     governor='powersave'
-    max_freq="2.13GHz"
 
 You should adjust this setting to your own needs.
+
+
+### Temperature Management
+
+Intel provides a daemon that will keep tabs on the CPUs’ temperature and
+adjust settings to keep it from getting too hot, its called `thermald`.
+
+    $ yaourt -S thermald
+    # systemctl enable thermald.service
+    # systemctl start thermald.service
 
 
 ### Fan Control
@@ -1341,26 +1392,50 @@ display brightness.
 
 Create your configuration file for xbindkeys: `.xbindkeysrc`
 
+    # Increase volume 5% with Apple volume up
     "amixer set Master playback 5%+"
+        m:0x0 + c:123
         XF86AudioRaiseVolume
+    # Increase volume 5% with F12
+    "amixer set Master playback 5%+"
+        m:0x0 + c:96
 
+
+    # Decrease volume 5% with Apple volume down
     "amixer set Master playback 5%-"
+        m:0x0 + c:122
         XF86AudioLowerVolume
+    # Decrease volume 5% with F11
+    "amixer set Master playback 5%-"
+        m:0x0 + c:95
 
+
+    # Mute with Apple mute
     "amixer set Master toggle"
+        m:0x0 + c:121
         XF86AudioMute
+    # Mute with F10
+    "amixer set Master toggle"
+        m:0x0 + c:76
 
-    "xbacklight -dec 10"
-      XF86MonBrightnessDown
 
-    "xbacklight -inc 10"
-      XF86MonBrightnessUp
+    # Suspend system
+    "systemctl suspend"
+        m:0x0 + Mod4 + c:107
+        Mod4 + XF86Eject
 
-    "kbdlight up"
-      XF86KbdBrightnessUp
 
+    # Dim keyboard
     "kbdlight down"
-      XF86KbdBrightnessDown
+        m:0x0 + c:237
+        XF86KbdBrightnessUp
+
+
+    # Brighten keyboard
+    "kbdlight up"
+        m:0x0 + c:238
+        XF86KbdBrightnessDown
+
 
 Next we'll auto-start xbindkeys when X starts, add this to your `.xinitrc`
 file:
@@ -1369,6 +1444,7 @@ file:
         # Load custom keyboard key bindings
         xbindkeys
     fi;
+
 
 ### Apple Trackpad
 
@@ -1440,3 +1516,5 @@ Any changes to this article will be annotated with a footnote and explained here
    March 14, 2016: Thanks <a href="https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3">Fr0gm4n</a> for suggestions simplifying the writing of `iso` images to USB.</div>
 1. <div id="5"><a name="5"></a>
    March 18, 2016: Changed references to `.Xinitrc` to the correct filename, `.xinitrc`.</div>
+1. <div id="6"><a name="6"></a>
+   March 24, 2016: Added two new sections documenting Laptop Mode Tools and `acpid`.</div>
