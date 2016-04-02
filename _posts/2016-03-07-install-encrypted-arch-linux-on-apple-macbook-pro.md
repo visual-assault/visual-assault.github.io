@@ -793,10 +793,11 @@ that looks like this:
     title   Arch Linux
     linux   /vmlinuz-linux
     initrd  /initramfs-linux.img
-    options cryptdevice=/dev/sda3:vgcrypt:allow-discards root=/dev/mapper/vgcrypt-root rw
+    options cryptdevice=/dev/sda5:vgcrypt:allow-discards root=/dev/mapper/vgcrypt-root rw
 
-**Note**: On the options line, make sure your drive replaces `/dev/sda3`
-and remove `:allow-discards` if you're *not* running on a SSD drive.
+**Note**:<sup>[7](#7)</sup> On the options line, make sure you replace `/dev/sda5` with the
+path to the encrypted partition on your device. Additionally, if your drive
+is *not* a SSD, make sure to remove `:allow-discards`.
 
 Check the boot tree with `tree /boot/` (If `tree` isn’t installed, install it
 with `pacman -S tree`). It should look something like this:
@@ -1505,16 +1506,34 @@ inspiration.
 Any changes to this article will be annotated with a footnote and explained here.
 
 1. <div id="1"><a name="1"></a>
-  March 6, 2016: Previously used `NetworkManager` to detect and connect to WiFi networks, but
-  have changed to use `netctl` and `wifi-menu` as these commands are more low-level and have fewer
-  dependencies.</div>
+   March 6, 2016: Previously used <code>NetworkManager</code> to detect
+   and connect to WiFi networks, but have changed to use
+   <code>netctl</code> and <code>wifi-menu</code> as these commands are
+   more low-level and have fewer dependencies.
+   </div>
 1. <div id="2"><a name="2"></a>
-   March 8, 2016: Previously omitted the `-S` option in `yaourt`, fixed.</div>
+   March 8, 2016: Previously omitted the <code>-S</code> option in
+   yaourt, fixed.
+   </div>
 1. <div id="3"><a name="3"></a>
-   March 8, 2016: Added a section covering the Apple Trackpad.</div>
+   March 8, 2016: Added a section covering the Apple Trackpad.
+   </div>
 1. <div id="4"><a name="4"></a>
-   March 14, 2016: Thanks <a href="https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3">Fr0gm4n</a> for suggestions simplifying the writing of `iso` images to USB.</div>
+   March 14, 2016: Thanks
+   <a href="https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d0y36h4?context=3">Fr0gm4n</a>
+   for suggestions simplifying the writing of <code>iso</code>
+   images to USB.
+   </div>
 1. <div id="5"><a name="5"></a>
-   March 18, 2016: Changed references to `.Xinitrc` to the correct filename, `.xinitrc`.</div>
+   March 18, 2016: Changed references to <code>.Xinitrc</code> to the
+   correct filename, <code>.xinitrc</code>.
+   </div>
 1. <div id="6"><a name="6"></a>
-   March 24, 2016: Added two new sections documenting Laptop Mode Tools and `acpid`.</div>
+   March 24, 2016: Added two new sections documenting Laptop Mode Tools
+   and <code>acpid</code>.
+   </div>
+1. <div id="7"><a name="7"></a>
+   April 2, 2016: Thanks
+   <a href="https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d1mleow?context=3">Perceptes</a>
+   for helping to clarify the text explaining how to configure the bootloader.
+   </div>
