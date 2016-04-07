@@ -703,7 +703,7 @@ our passwords during boot. Edit `/etc/mkinitcpio.conf` and add
 the hooks `consolefont keyboard encrypt lvm2` **BEFORE** `filesystems` so the
 HOOKS line looks like this:
 
-    HOOKS="base udev autodetect modconf block consolefont keyboard encrypt lvm2 filesystems fsck"
+    HOOKS="base udev autodetect modconf block consolefont keyboard usbinput encrypt lvm2 filesystems fsck"
 
 Now we need to regenerate the initramfs image:
 
