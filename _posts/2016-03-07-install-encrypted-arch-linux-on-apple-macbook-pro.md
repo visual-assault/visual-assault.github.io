@@ -66,7 +66,6 @@ If you just want to get on to the installation, skip to this link:
   * [Improved Typography](#improved-typography)
   * [Window Manager Awesome](#window-manager-awesome)
   * [Touchpad Support](#touchpad-support)
-  * [Display Manager LightDM](#display-manager-lightdm)
   * [Configuring Wireless](#configuring-wireless)
   * [Done!](#done)
 * [Fine Tuning](#fine-tuning)
@@ -1032,90 +1031,31 @@ simplest driver is the synaptics driver:
 
     # pacman -S xf86-input-synaptics
 
-The following config at /etc/X11/xorg.conf.d/50-synaptics.conf works well
-for me, it uses the same "Natural Motion" that OS X does.
+The following config at /usr/share/X11/xorg.conf.d/70-synaptics.conf works well
+for me, it uses the same "Natural Motion" that OS X does. Copy that file to the
+following location `/etc/X11/xorg.conf.d/70-synaptics.conf` and add the options
+between the `START` and `END` comments.
 
     Section "InputClass"
         MatchIsTouchpad "on"
         Identifier      "touchpad catchall"
         Driver          "synaptics"
 
+        # START: Add these options
         # 1 = left, 2 = right, 3 = middle
         Option          "TapButton1" "1"  
         Option          "TapButton2" "3"
         Option          "TapButton3" "2"
-
         # Palm detection
         Option          "PalmDetect" "1"
-
         # Horizontal scrolling
         Option "HorizTwoFingerScroll" "1"
         Option "VertTwoFingerScroll" "on"
-
         # Natural Scrolling (and speed)
         Option "VertScrollDelta" "-450"
         Option "HorizScrollDelta" "-450"
+        # END
     EndSection
-
-
-### Display Manager LightDM
-
-Display managers are really just an automation tool that auto-starts X
-and lets you quickly log in to your window manager. This may be optional,
-your choice.
-
-GDM, the GNOME Display Manager, is popular, but it’ll make you install
-the entire GNOME desktop environment. Screw that. There’s MDM, the Linux
-Mint display manager, which is a fork of GDM 2. There are many others, but
-they're all overly complex and heavy.
-
-LightDM provides the hooks for X-server and
-an authentication subsystem, and has a few options for the GUI toolkit that
-actually renders the interface. These are called "greeters". There is a GTK
-greeter as well as a KDE greeter, both are optional dependencies. I've skipped
-those in favor of the `webkit2` greeter. This uses the HTML
-rendering engine from the Chromium project to render the interface. No reliance
-on complex GUI toolkits. It’s light, fast and seems to do a great job at
-its' tasks. Its' so dead-simple to customize since all the greeters are themable
-by simply editing the HTML/CSS and JavaScript.
-
-It's so simple to theme, I actually took 30-minutes and built my own theme
-that we'll be installing. If you'd like to view a preview of the theme,
-you can [view it on the web](https://fiddle.jshell.net/0xADADA/nqynn75j/show/)
-(since its just HTML and javascript).
-First we'll install LightDM itself, along with the Webkit2 greeter, then
-my custom theme.
-
-    # pacman -S lightdm
-    yaourt -S lightdm-webkit2-greeter
-
-Verify the `lightdm-webkit2-greeter` is loaded in the LightDM config file
-located at `/etc/lightdm/lightdm.conf`, it should have a line like this:
-
-    greeter-session=lightdm-webkit2-greeter
-
-Now lets get LightDM to start after the system boots up.
-
-    # systemctl enable lightdm.service
-    # systemctl start lightdm.service
-
-You can now reboot and see the LightDM display manager prompt you to login.
-
-Feel free to skip this next part, where we'll install a nicer-looking
-and super-simple greeter theme.
-
-    cd /usr/share/lightdm-webkit/themes
-    # sudo git clone https://github.com/0xadada/lightdm-webkit2-theme-kiss.git kiss
-
-To enable the  LightDM webkit2 greeter to load this theme, edit
-`/etc/lightdm/lightdm-webkit2-greeter.conf` to have the following contents:
-
-    [greeter]
-    webkit-theme=kiss
-
-You can now restart lightDM service to view the custom greeter theme.
-
-    # systemctl restart lightdm.service
 
 
 ### Configuring Wireless
