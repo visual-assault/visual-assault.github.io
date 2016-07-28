@@ -31,7 +31,7 @@ My decisions (take them or leave them):
 * Typography: infinality-bundle with the "Free" preset
 
 This article assumes you're currently running on a MacBook Pro between
-generation 7,1 (Mid-2010) to 8,2 (Early-2011). It assumes you're running
+generation 7,1 (Mid-2010), 8,2 (Early-2011) or 11,3 (Late-2013). It assumes you're running
 OS X and already have some experience with Linux commands, disk partitions
 and GNU/Linux. I've tested this guide on both of the above generations, but
 I'm assuming it'll work on anything in between. However, I make no guarantees.
@@ -1070,7 +1070,7 @@ driver: `broadcom-wl`. I actually don’t think this even officially supports th
 BCM4360 chipset, but it works well enough. We’ll need to install the AUR
 package:
 
-    $ yaourt -S broadcom-wl
+    $ yaourt -S broadcom-wl dialog wpa_supplicant
 
 And activate the kernel module:
 
