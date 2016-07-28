@@ -936,7 +936,13 @@ up and running with the proper drivers. Luckily this machine uses Intel
 graphics, and Intel is pretty good about providing Linux (and sometimes
 open-source) drivers.
 
+For Macbookpro 7,1 (Mid-2010 or 8,2 (Early-2011):
+
     # pacman -S xf86-video-intel mesa-libgl libva-intel-driver libva
+
+For Macbookpro 11,3 (Late-2013)<sup>[8](#8)</sup>
+
+    # pacman -S nvidia mesa-libgl libva-intel-driver libva
 
 The `-S` flag tells pacman to install the subsequent packages listed.
 (Again, you can use yaourt if you’d like.) This will install the Intel video
@@ -1476,4 +1482,7 @@ Any changes to this article will be annotated with a footnote and explained here
    April 2, 2016: Thanks
    <a href="https://www.reddit.com/r/archlinux/comments/493k4n/installing_encrypted_arch_linux_on_an_apple/d1mleow?context=3">Perceptes</a>
    for helping to clarify the text explaining how to configure the bootloader.
+   </div>
+1. <div id="8"><a name="8"></a>
+   July 28, 2016: Updated to support Macbookpro 11,3 devices with NVidia cards.
    </div>
