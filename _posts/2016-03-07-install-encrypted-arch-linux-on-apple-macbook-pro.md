@@ -1484,5 +1484,5 @@ Any changes to this article will be annotated with a footnote and explained here
    for helping to clarify the text explaining how to configure the bootloader.
    </div>
 1. <div id="8"><a name="8"></a>
-   July 28, 2016: Updated to support Macbookpro 11,3 devices with NVidia cards.
+   July 28, 2016: Updated to support Macbookpro 11,3 devices with NVidia cards. This device uses NVIDIA GeForce GT 750M (Codename NVE7/GK107).
    </div>
