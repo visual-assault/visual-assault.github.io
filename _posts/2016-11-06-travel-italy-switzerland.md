@@ -4,7 +4,7 @@ title: "Travel Writing - Redux, Italy & Switzerland Edition"
 displayTitle: "Travel Writing, the Redux, Italy & Switzerland Edition"
 date: 2016-11-06 22:17:00
 metaDescription: "How travel does not provide new perspectives or meaning."
-metaImage: /static/images/2011-12-01-travel-writing-bologna-italy-alleyway.jpg
+metaImage: /static/images/2016-10-27-travel-val-ferret.jpg
 metaKeywords: travel, writing, perspective
 metaOgType: "article"
 author: Ron. A
