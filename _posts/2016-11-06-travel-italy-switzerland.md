@@ -13,11 +13,11 @@ license: cc-by-nc-sa
 
 
 <figure>
-  ![Garbage truck in Turino, Italy](/static/images/2016-10-24-travel-garbage.jpg)
+  <img src="/static/images/2016-10-24-travel-garbage.jpg" alt="Garbage truck in Turino, Italy">
   <figcaption>Garbage truck in Turino, Italy</figcaption>
 </figure>
 
-In 2011 [I wrote](/2011/12/01/travel-writing/)
+[In 2011 I wrote](/2011/12/01/travel-writing/):
 
 > Travel opens my mind to new perspectives and allows me to recontextualize
 > existing systems of thought.
@@ -34,7 +34,10 @@ Perhaps its how the distances are percieved that really matters. If ones
 perception of 2,400 miles is two mediocre movies and a few bad in-flight
 meals, perhaps its not really "travel".
 
-![Looking northeast up the Italian side of the Val Ferret, to Switzerland](/static/images/2016-10-27-travel-val-ferret.jpg)
+<figure>
+  <img src="/static/images/2016-10-27-travel-val-ferret.jpg" alt="Looking northeast up the Italian side of the Val Ferret, to Switzerland">
+  <figcaption>Looking northeast up the Italian side of the Val Ferret, to Switzerland</figcaption>
+</figure>
 
 Its October 2016. I have the luxury of quitting my job at an Artificial
 Intelligence startup in Cambridge that I've been helping to build for the last
@@ -48,7 +51,10 @@ terra incognita by push my own limits- setting a goal on the horizon and getting
 there by any means. My goal was to hike across the border from italy into
 Switzerland via the Italian/Swiss Alps.
 
-![Looking southwest from the Col Val Ferret into Italy](/static/images/2016-10-28-travel-val-ferret-pano.jpg)
+<figure>
+  <img src="/static/images/2016-10-28-travel-val-ferret-pano.jpg" alt="Looking southwest from the Col Val Ferret into Italy">
+  <figcaption>Looking southwest from the Col Val Ferret into Italy</figcaption>
+</figure>
 
 Importantly, this trip wasn't about setting off on a "Hero's Journey", to return
 home a changed man, but to spend time alone to better understand myself. It was
@@ -62,7 +68,10 @@ are not discoverable by going farther, or hiking higher, but by allocating time
 and opening oneself to finding them. One has to both open the door, but then be
 willing to walk through the doorway.
 
-![The ridge of the Augstmatthorn, Interlaken Switzerland](/static/images/2016-10-30-travel-augstmatthorn.jpg)
+<figure>
+  <img src="/static/images/2016-10-30-travel-augstmatthorn.jpg" alt="The ridge of the Augstmatthorn, Interlaken Switzerland">
+  <figcaption>The ridge of the Augstmatthorn, Interlaken Switzerland</figcaption>
+</figure>
 
 Travel is just a big distraction of novelty and the remarkable. It's easy to forget
 everything and be immersed in the distraction. So if you are looking for something
@@ -70,7 +79,10 @@ inwards, be prepared to focus on whats inside, not whats outside. Travel
 can be an escape from oneself or ones responsibilities, an escape more powerful
 than other forms of escape.
 
-![The north face of the Eiger](/static/images/2016-10-31-travel-eiger.jpg)
+<figure>
+  <img src="/static/images/2016-10-31-travel-eiger.jpg" alt="The north face of the Eiger">
+  <figcaption>The north face of the Eiger</figcaption>
+</figure>
 
 In the end, travel for self-improvement is snake-oil just as any other form of
 organized, packaged, advertised and productized self-improvement (e.g. self-help
@@ -79,4 +91,7 @@ and boner pills). The real work can't be bought, it must be practiced- and you
 don't need to leave the house to do it. Travel doesn't change personal growth
 any more than puzzels improve intellectual growth.
 
-![Home, the journey inwards](/static/images/2016-11-06-travel-home.jpg)
+<figure>
+  <img src="/static/images/2016-11-06-travel-home.jpg" alt="Home, the journey inwards">
+  <figcaption>Home, the journey inwards</figcaption>
+</figure>
