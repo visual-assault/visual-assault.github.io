@@ -45,7 +45,7 @@ terra incognita by push my own limits- setting a goal on the horizon and getting
 there by any means. My goal was to hike across the border from italy into
 Switzerland via the Italian/Swiss Alps.
 
-[!Looking southwest from the Col Val Ferret into Italy](/static/images/2016-10-28-travel-val-ferret-pano.jpg)
+![Looking southwest from the Col Val Ferret into Italy](/static/images/2016-10-28-travel-val-ferret-pano.jpg)
 
 Importantly, this trip wasn't about setting off on a "Hero's Journey", to return
 home a changed man, but to spend time alone to better understand myself. It was
@@ -59,7 +59,7 @@ are no discoverable by going farther, or hiking higher, but by allocating time
 and opening oneself to finding them. One has to both open the door, but then be
 willing to walk through the doorway.
 
-[!The ridge of the Augstmatthorn, Interlaken Switzerland](/static/images/2016-10-30-travel-augstmatthorn.jpg)
+![The ridge of the Augstmatthorn, Interlaken Switzerland](/static/images/2016-10-30-travel-augstmatthorn.jpg)
 
 Travel is just a big distraction of novelty and the remarkable. It's easy to forget
 everything and be immersed in the distraction. So if you are looking for something
@@ -67,7 +67,7 @@ inwards, be prepared to need to focus on whats inside, not whats outside. Travel
 can be an escape from oneself or ones responsibilities, an escape more powerful
 than other forms of escape.
 
-[!The north face of the Eiger](/static/images/2016-10-31-travel-eiger.jpg)
+![The north face of the Eiger](/static/images/2016-10-31-travel-eiger.jpg)
 
 In the end, travel for self-improvement is snake-oil just as any other form of
 organized, packaged, advertised and productized self-improvement (e.g. self-help
@@ -76,4 +76,4 @@ and boner pills). The real work can't be bought, it must be practiced- and you
 don't need to leave the house to do it. Travel doesn't change personal growth
 any more than puzzels improve intellectual growth.
 
-[!Home, the journey inwards](/static/images/2016-11-06-travel-home.jpg)
+![Home, the journey inwards](/static/images/2016-11-06-travel-home.jpg)
