@@ -55,7 +55,7 @@ calm my own anxieties when stressed, to assess reality with facts and realize
 only my actions will have any impact on the outcomes. To foster a feeling of
 contentment with what **is**, not what could or may be. These are things I discovered
 not out on the road, or on a mountain path, but within myself. These learnings
-are no discoverable by going farther, or hiking higher, but by allocating time
+are not discoverable by going farther, or hiking higher, but by allocating time
 and opening oneself to finding them. One has to both open the door, but then be
 willing to walk through the doorway.
 
@@ -63,7 +63,7 @@ willing to walk through the doorway.
 
 Travel is just a big distraction of novelty and the remarkable. It's easy to forget
 everything and be immersed in the distraction. So if you are looking for something
-inwards, be prepared to need to focus on whats inside, not whats outside. Travel
+inwards, be prepared to focus on whats inside, not whats outside. Travel
 can be an escape from oneself or ones responsibilities, an escape more powerful
 than other forms of escape.
 
