@@ -12,7 +12,10 @@ license: cc-by-nc-sa
 ---
 
 
-![Garbage truck in Turino, Italy](/static/images/2016-10-24-travel-garbage.jpg)
+<figure>
+  ![Garbage truck in Turino, Italy](/static/images/2016-10-24-travel-garbage.jpg)
+  <figcaption>Garbage truck in Turino, Italy</figcaption>
+</figure>
 
 In 2011 [I wrote](/2011/12/01/travel-writing/)
 
