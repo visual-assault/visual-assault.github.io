@@ -131,7 +131,7 @@ have a battery that is glued in place, the memory is soldered
 directly to the logic board. Later models would come with the hard drive
 soldered down as well.
 
-[Lyle Wiens of iFixIt, said it best in 2012](www.wired.com/2012/06/opinion-apple-retina-displa/)
+[Lyle Wiens of iFixIt, said it best in 2012](http://ifixit.org/blog/2763/the-new-macbook-pro-unfixable-unhackable-untenable/)
 
 > When Apple dropped the MacBook Air to $999 in 2010 to match the price
 > point of the MacBook, they gave users a clear choice: the thin, light,
