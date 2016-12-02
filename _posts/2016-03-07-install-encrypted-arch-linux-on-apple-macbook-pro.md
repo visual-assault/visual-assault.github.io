@@ -792,11 +792,11 @@ that looks like this:
     title   Arch Linux
     linux   /vmlinuz-linux
     initrd  /initramfs-linux.img
-    options cryptdevice=/dev/sda5:vgcrypt:allow-discards root=/dev/mapper/vgcrypt-root rw
+    options cryptdevice=/dev/sdaX:vgcrypt:allow-discards root=/dev/mapper/vgcrypt-root rw
 
-**Note**:<sup>[7](#7)</sup> On the options line, make sure you replace `/dev/sda5` with the
-path to the encrypted partition on your device. Additionally, if your drive
-is *not* a SSD, make sure to remove `:allow-discards`.
+**Note**:<sup>[7](#7)</sup> On the options line, make sure you replace `/dev/sdaX` with the
+path to the encrypted linux partition we previously created on your device. Additionally,
+if your drive is *not* a SSD, make sure to remove `:allow-discards`.
 
 Check the boot tree with `tree /boot/` (If `tree` isn’t installed, install it
 with `pacman -S tree`). It should look something like this:
@@ -1485,4 +1485,7 @@ Any changes to this article will be annotated with a footnote and explained here
    </div>
 1. <div id="8"><a name="8"></a>
    July 28, 2016: Updated to support Macbookpro 11,3 devices with NVidia cards. This device uses NVIDIA GeForce GT 750M (Codename NVE7/GK107).
+   </div>
+1. <div id="9"><a name="9"></a>
+   December 2, 2016: Thanks to Joshua Brown for clarifications to writing the bootloader line.
    </div>
