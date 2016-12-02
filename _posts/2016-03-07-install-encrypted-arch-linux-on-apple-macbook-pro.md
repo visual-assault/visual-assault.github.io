@@ -795,8 +795,9 @@ that looks like this:
     options cryptdevice=/dev/sdaX:vgcrypt:allow-discards root=/dev/mapper/vgcrypt-root rw
 
 **Note**:<sup>[7](#7)</sup> On the options line, make sure you replace `/dev/sdaX` with the
-path to the encrypted linux partition we previously created on your device. Additionally,
-if your drive is *not* a SSD, make sure to remove `:allow-discards`.
+path to the encrypted linux partition we previously created on your device (It was
+`/dev/sda5` in this guide). Additionally, if your drive is *not* a SSD, make sure to
+remove `:allow-discards`.
 
 Check the boot tree with `tree /boot/` (If `tree` isn’t installed, install it
 with `pacman -S tree`). It should look something like this:
