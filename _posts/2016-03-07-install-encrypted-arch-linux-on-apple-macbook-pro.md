@@ -799,6 +799,14 @@ path to the encrypted linux partition we previously created on your device (It w
 `/dev/sda5` in this guide). Additionally, if your drive is *not* a SSD, make sure to
 remove `:allow-discards`.
 
+**Note**:<sup>[9](#9)</sup> Its been reported by some users that when booting to USB, the
+USB drive is assigned device id `/dev/sda` and the hard drive to `/dev/sdb`. When rebooting
+without USB drive (boot to new encrypted linux drive partition), the hard drive is reassigned
+to device id `/dev/sda` which may invalidate the above `arch.conf` boot loader entry. In this
+case, the encrypted linux partition will not boot because the boot loader config `arch.conf`
+is configured to boot from `/dev/sdb`. In this case you can reboot to USB again, and edit the
+options line in `arch.conf` to read `/dev/sdaX`. Replace X with your partition id.
+
 Check the boot tree with `tree /boot/` (If `tree` isn’t installed, install it
 with `pacman -S tree`). It should look something like this:
 
