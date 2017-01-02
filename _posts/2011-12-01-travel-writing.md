@@ -8,6 +8,7 @@ metaImage: /static/images/2011-12-01-travel-writing-bologna-italy-alleyway.jpg
 metaKeywords: travel, writing, perspective
 metaOgType: "article"
 author: Ron. A
+alternate: https://0xadada.pub/2011/12/01/travel-writing/
 license: cc-by-nc-sa
 ---
 

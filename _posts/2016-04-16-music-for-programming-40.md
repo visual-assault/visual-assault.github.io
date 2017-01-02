@@ -7,6 +7,7 @@ metaDescription: "a DJ set of ambient, drone and EDM intended to help concentrat
 metaKeywords: music, programming, ambient, drone, sci-fi, DJ set, mix
 metaOgType: "article"
 author: Ron. A
+alternate: https://0xadada.pub/2016/04/16/music-for-programming-40/
 license: cc-by-nc-sa
 ---
 

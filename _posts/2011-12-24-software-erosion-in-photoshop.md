@@ -7,6 +7,7 @@ metaDescription: "Evaluating software quality on visual polish"
 metaOgType: "article"
 metaImage: /static/images/2011-12-24-photoshop-scrollbar-study.png
 author: Ron. A
+alternate: https://0xadada.pub/2011/12/24/software-erosion-in-photoshop/
 license: "cc-by"
 ---
 

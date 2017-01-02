@@ -8,6 +8,7 @@ metaImage: /static/images/2016-10-27-travel-val-ferret.jpg
 metaKeywords: travel, writing, perspective
 metaOgType: "article"
 author: Ron. A
+alternate: https://0xadada.pub/2016/11/06/travel-italy-switzerland/
 license: cc-by-nc-sa
 ---
 

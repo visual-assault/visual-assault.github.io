@@ -7,6 +7,7 @@ metaDescription: "This article will describe an overview, differentiation from o
 metaKeywords: hikikomori, 引きこもり, otaku, おたく, Burakumin, 部落民, sociology, The Other, hinin, 非人, futoko, 不登校
 metaOgType: "article"
 author: Ron. A (Northeastern University)
+alternate: https://0xadada.pub/2003/01/01/hikikomori-otaku-japans-latest-outcasts/
 license: cc-by-nc-sa
 ---
 

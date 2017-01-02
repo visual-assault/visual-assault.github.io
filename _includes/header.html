@@ -7,6 +7,13 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="home" href="{{ site.url }}">
 
+{% if page.alternate %}
+  <link rel="alternate" href="{{ page.alternate }}">
+  <link rel="canonical" href="{{ page.alternate }}">
+{% else %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% endif %}
+
 {% if site.is_dev %}
   <link rel="stylesheet" href="/static/stylesheets/all.css">
 {% else %}
