@@ -33,7 +33,11 @@ back freely to help empower the open-source community.
 {% for post in site.posts %}
   {% if post.hidden != true %}
   <li>
+    {% if post.alternate %}
+    <a href="{{ post.alternate }}" title="{{ post.title }}">
+    {% else %}
     <a href="{{ post.url }}" title="{{ post.title }}">
+    {% endif %}
       <span>{{ post.title }}</span>
     </a>
     <br>
