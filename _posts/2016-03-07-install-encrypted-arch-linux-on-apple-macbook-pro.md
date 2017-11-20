@@ -7,6 +7,7 @@ metaDescription: "A howto guide for installing encrypted Arch Linux on an Apple 
 metaKeywords: Apple, MacBook, MacBook Pro, encryption, linux, Arch Linux, GNU/Linux,
 metaOgType: "article"
 author: Ron. A
+alternate: https://0xadada.pub/2016/03/05/install-encrypted-arch-linux-on-apple-macbook-pro/
 license: cc-by-nc-sa
 ---
 
