@@ -8,6 +8,7 @@ metaOgType: "article"
 metaImage: /static/images/2015-03-31-dnt-firefox.png
 author: Ron. A
 license: cc-by-nc-sa
+alternate: https://0xadada.pub/2015/03/31/approaches-for-pushing-dnt-to-the-edges/
 ---
 
 Lets face it, Do Not Track (DNT) is dying a slow death. Content providers
