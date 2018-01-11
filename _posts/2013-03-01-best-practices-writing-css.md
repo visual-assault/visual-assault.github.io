@@ -7,6 +7,7 @@ metaDescription: "Conventions to help writing performant, maintainable styleshee
 metaOgType: "article"
 author: Ron. A
 license: cc-by-sa
+alternate: https://0xadada.pub/2013/03/01/best-practices-writing-css/
 ---
 
 ## General High-Order Principles
