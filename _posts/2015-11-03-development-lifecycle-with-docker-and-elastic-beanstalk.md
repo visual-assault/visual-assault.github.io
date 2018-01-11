@@ -8,6 +8,7 @@ metaKeywords: docker, elastic beanstalk, amazon aws, python, django, development
 metaOgType: "article"
 author: Ron. A
 license: cc-by-nc-sa
+alternate: https://0xadada.pub/2015/11/03/development-lifecycle-with-docker-and-elastic-beanstalk/
 ---
 
 
