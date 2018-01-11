@@ -8,6 +8,7 @@ metaOgType: "article"
 metaImage: /static/images/2015-08-03-git-merge-vs-rebase-07.png
 author: Ron. A
 license: cc-by
+alternate: https://0xadada.pub/2015/08/03/when-to-use-git-merge-vs-git-rebase/
 ---
 
 I’ve seen many articles and discussions online discussing the merits of
