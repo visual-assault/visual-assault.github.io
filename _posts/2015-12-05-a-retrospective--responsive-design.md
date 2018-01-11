@@ -8,6 +8,7 @@ metaKeywords: responsive, design, responsive design, web design, process
 metaOgType: "article"
 author: Ron. A
 license: cc-by-nc-sa
+alternate: https://0xadada.pub/2015/11/05/a-retrospective-responsive-design/
 ---
 
 
