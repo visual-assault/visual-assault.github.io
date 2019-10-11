@@ -22,8 +22,7 @@ gulp build
 
 ## Contributors
 
-* Ron. A - [@0xADADA](https://github.com/0xadada) -
-[@0xADADA](https://twitter.com/0xadada)
+* [@0xADADA](https://github.com/0xadada)
 
 ## License
 [MIT](LICENSE)
